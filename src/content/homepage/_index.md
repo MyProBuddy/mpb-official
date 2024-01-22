@@ -1,12 +1,12 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Next Project"
-  content: "Nextplate is a free starter template built with Next and TailwindCSS, providing everything you need to jumpstart your Next project and save valuable time."
+  title: "Online Startup Accelerator"
+  content: "Accelerate your startup's growth exponentially while retaining full ownership – no need to relinquish a single percentage of equity."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
+    label: "Lets do it"
     link: "https://github.com/zeon-studio/nextplate"
 
 # Features

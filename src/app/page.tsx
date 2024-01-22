@@ -7,6 +7,7 @@ import Testimonials from "@/partials/Testimonials";
 import { Button, Feature } from "@/types";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa/index.js";
+import './global.css';
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
@@ -28,10 +29,11 @@ const Home = () => {
         <div className="container">
           <div className="row justify-center">
             <div className="mb-16 text-center lg:col-7">
-              <h1
-                className="mb-4"
-                dangerouslySetInnerHTML={markdownify(banner.title)}
-              />
+            <h1
+              className="head1 mb-4 text-5xl font-bold"
+              dangerouslySetInnerHTML={markdownify(banner.title)}
+            />
+
               <p
                 className="mb-8"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}

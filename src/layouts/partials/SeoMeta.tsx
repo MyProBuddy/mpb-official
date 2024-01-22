@@ -27,7 +27,7 @@ const SeoMeta = ({
     <>
       {/* title */}
       <title>
-        {plainify(meta_title ? meta_title : title ? title : config.site.title)}
+        MyProBuddy
       </title>
 
       {/* canonical url */}
