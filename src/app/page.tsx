@@ -7,6 +7,8 @@ import Testimonials from "@/partials/Testimonials";
 import { Button, Feature } from "@/types";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa/index.js";
+import LogoGrid from "@/partials/logoGrid";
+import Counter from "@/partials/counter";
 import './global.css';
 
 const Home = () => {
@@ -50,8 +52,8 @@ const Home = () => {
                 <ImageFallback
                   src={banner.image}
                   className="mx-auto"
-                  width="800"
-                  height="420"
+                  width="1100"
+                  height="550"
                   alt="banner image"
                   priority
                 />
@@ -64,41 +66,54 @@ const Home = () => {
       {features.map((feature, index: number) => (
         <section
           key={index}
-          className={`section-sm ${index % 2 === 0 && "bg-gradient"}`}
+          className={`section-sm ${index % 2 === 0 && "bg-gradient-to-b from-transparent to-[#34222E]"}`}
         >
-          <div className="container">
+          <div className="container ">
             <div className="row items-center justify-between">
               <div
-                className={`mb:md-0 mb-6 md:col-5 ${index % 2 !== 0 && "md:order-2"
+                className={`mb:md-0 mb-4 md:col-7 ${index % 2 !== 0 && "md:order-2"
                   }`}
               >
                 <ImageFallback
                   src={feature.image}
-                  height={480}
-                  width={520}
+                  height={880}
+                  width={1020}
                   alt={feature.title}
                 />
               </div>
+
               <div
-                className={`md:col-7 lg:col-6 ${index % 2 !== 0 && "md:order-1"
+                className={`md:col-7 lg:col-4 ${index % 2 !== 0 && "md:order-1"
                   }`}
               >
                 <h2
                   className="mb-4"
+                  style={{
+                    fontSize: "48px",
+                    lineHeight: "57.6px",
+                    textAlign: "left",
+                  }}
                   dangerouslySetInnerHTML={markdownify(feature.title)}
                 />
                 <p
-                  className="mb-8 text-lg"
+                  className="mb-6 text-[#be9a94]"
+                  style={{
+                    fontFamily: "Poppins, Helvetica, Arial, sans-serif",
+                    fontSize: "18px",
+                    lineHeight: "27px",
+                    textAlign: "left",
+                    letterSpacing: "-0.36px",
+                  }}
                   dangerouslySetInnerHTML={markdownify(feature.content)}
                 />
-                <ul>
+                {/* <ul>
                   {feature.bulletpoints.map((bullet: string) => (
                     <li className="relative mb-4 pl-6" key={bullet}>
                       <FaCheck className={"absolute left-0 top-1.5"} />
                       <span dangerouslySetInnerHTML={markdownify(bullet)} />
                     </li>
                   ))}
-                </ul>
+                </ul> */}
                 {feature.button.enable && (
                   <Link
                     className="btn btn-primary mt-5"
@@ -112,6 +127,8 @@ const Home = () => {
           </div>
         </section>
       ))}
+      <LogoGrid />
+      <Counter />
 
       <Testimonials data={testimonial} />
       <CallToAction data={callToAction} />

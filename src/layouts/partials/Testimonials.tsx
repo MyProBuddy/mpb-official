@@ -27,9 +27,14 @@ const Testimonials = ({ data }: { data: PageData }) => {
             <div className="row">
               <div className="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
                 <h2
-                  dangerouslySetInnerHTML={markdownify(data.frontmatter.title)}
                   className="mb-4"
-                />
+                  style={{ background: "linear-gradient(to right, #f57114, #5e2591)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+                    fontSize: "48px",
+                    lineHeight: "57.6px",
+                    letterSpacing: "-1.92px",
+                    textAlign: "center",
+                  }}
+                >What People Says ? </h2>
                 <p
                   dangerouslySetInnerHTML={markdownify(
                     data.frontmatter.description!,

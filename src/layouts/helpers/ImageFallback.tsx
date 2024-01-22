@@ -16,6 +16,8 @@ const ImageFallback = (props: any) => {
     <Image
       {...rest}
       src={imgSrc}
+      placeholder="empty"
+      loader={({ src }) => src}
       onError={() => {
         setImgSrc(fallback);
       }}

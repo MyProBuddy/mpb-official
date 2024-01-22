@@ -34,7 +34,7 @@ const Footer = () => {
       </div> */}
       <div className="border-t border-border py-7 dark:border-darkmode-border">
         <div className="container text-center text-light dark:text-darkmode-light">
-          <p dangerouslySetInnerHTML={markdownify(copyright)} />
+          <p>Designed And Developed by My Pro Buddy</p>
         </div>
       </div>
     </footer>
