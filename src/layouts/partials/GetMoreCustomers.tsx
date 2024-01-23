@@ -22,11 +22,11 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section>
           <div className="container">
-            <div className="rounded-xl px-4 xl:p-20 bg-gradient-to-t from-[#7b3f30] to-transparent">
+            <div className="rounded-xl p-4 xl:p-20 bg-gradient-to-t from-[#7b3f30] to-transparent">
               <div className={`row items-center justify-between`}>
                 <div className="hidden md:block mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
                   <ImageFallback
-                    className="w-full h-auto "
+                    className="w-full h-auto"
                     src={image1}
                     width={392}
                     height={390}
@@ -67,6 +67,10 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                     </Link>
                   )}
                 </div>
+              </div>
+              <div className="flex items-center mb-2">
+                <span className="text-white font-bold">Launched on our Platforms</span>
+                <hr className="flex-1 ml-4 opacity-50 border-[1px]"/>
               </div>
               <Swiper
                 modules={[Autoplay, Pagination]}
