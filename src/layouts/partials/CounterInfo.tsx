@@ -50,7 +50,7 @@ const CounterInfo = ({ data }: { data: PageData }) => {
                       lineHeight: "27px",
                       textAlign: "left",
                     }}
-                  >Stuck on something? Don't sweat it. Jump on a call with the Founder guru on the topic and get instant answers to anything from "How to Optimize my Facebook Spend" to "Give me a brutal review of my Pitch Deck."</p>
+                  >Stuck on something? Dont sweat it. Jump on a call with the Founder guru on the topic and get instant answers to anything from How to Optimize my Facebook Spend to Give me a brutal review of my Pitch Deck.</p>
                  
                     <Link
                       className="btn btn-primary"

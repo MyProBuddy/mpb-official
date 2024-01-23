@@ -31,6 +31,7 @@ export default function LogoGrid(){
                   src={logo1}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -38,6 +39,7 @@ export default function LogoGrid(){
                   src={logo2}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -45,6 +47,7 @@ export default function LogoGrid(){
                   src={logo3}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -52,6 +55,7 @@ export default function LogoGrid(){
                   src={logo4}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -59,6 +63,7 @@ export default function LogoGrid(){
                   src={logo5}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -66,6 +71,7 @@ export default function LogoGrid(){
                   src={logo6}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -73,6 +79,7 @@ export default function LogoGrid(){
                   src={logo7}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -80,6 +87,7 @@ export default function LogoGrid(){
                   src={logo8}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -87,6 +95,7 @@ export default function LogoGrid(){
                   src={logo9}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -94,6 +103,7 @@ export default function LogoGrid(){
                   src={logo10}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -101,6 +111,7 @@ export default function LogoGrid(){
                   src={logo11}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -108,6 +119,7 @@ export default function LogoGrid(){
                   src={logo12}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -115,6 +127,7 @@ export default function LogoGrid(){
                   src={logo13}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -122,6 +135,7 @@ export default function LogoGrid(){
                   src={logo14}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
               <div className={`${style.gridItem} bg-transparent`}>
@@ -129,6 +143,7 @@ export default function LogoGrid(){
                   src={logo15}
                   width={200}
                   height={200}
+                  alt="img"
                 />
               </div>
           </div>
