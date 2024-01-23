@@ -10,6 +10,7 @@ import { FaCheck } from "react-icons/fa/index.js";
 import LogoGrid from "@/partials/logoGrid";
 import Counter from "@/partials/counter";
 import GetMoreCustomers from "@/partials/GetMoreCustomers";
+import CounterInfo from "@/partials/CounterInfo";
 import RaiseCapital from "@/partials/RaiseCapital";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
   const callToAction = getListPage("sections/call-to-action.md");
   const getMoreCustomers = getListPage("sections/get-more-customers.md");
   const raiseCapital = getListPage("sections/raise-capital.md");
+  const counterinfo = getListPage("sections/counterinfo.md");
   const { frontmatter } = homepage;
   const {
     banner,
@@ -144,8 +146,10 @@ const Home = () => {
       ))}
       <LogoGrid />
       <Counter />
+
       <GetMoreCustomers data={getMoreCustomers} />
       <RaiseCapital data={raiseCapital} />
+      <CounterInfo data={counterinfo} />
 
       <Testimonials data={testimonial} />
       <CallToAction data={callToAction} />
