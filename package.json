@@ -12,8 +12,7 @@
     "postbuild": "next-sitemap",
     "lint": "next lint",
     "format": "prettier -w ./src",
-    "generate-json": "node scripts/jsonGenerator.js",
-    "remove-darkmode": "node scripts/removeDarkmode.js && yarn format"
+    "generate-json": "node scripts/jsonGenerator.js"
   },
   "engines": {
     "node": "18.18.2"
