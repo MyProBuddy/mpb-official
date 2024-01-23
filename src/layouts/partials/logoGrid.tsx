@@ -20,7 +20,7 @@ export default function LogoGrid(){
     return (
       <section className="section pt-14">
         <div className="container">
-          <div className={`${style.gridContainer} grid-inner-[5,6]`}>
+          <div className={`${style.gridContainer} grid-inner-[2,6] md:grid-inner-[3,6] lg:grid-inner-[5,6]`}>
             {/* {Array.from({ length: 15 }, (_, i) => i + 1).map((num) => (
               <div key={num} className={`${style.gridItem} bg-transparent`}>
                 {num}
