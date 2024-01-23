@@ -12,6 +12,7 @@ banner:
 # Features
 features:
   - title: "Customized Action Plan"
+    heading: "Plan for Scale"
     image: "/bg/callout-custom-funding-plan.png"
     content: "You tell us what you want to achieve, we'll build a kick-ass plan to get it done fast. We'll customize your plan to take advantage of the playbooks of thousands of startups before you."
     bulletpoints:
@@ -25,6 +26,7 @@ features:
       link: "#"
 
   - title: "Curated Peer Groups"
+    heading: "Grow Your Network"
     image: "/bg/CuratedPeerGroups.png"
     content: "Join hand-curated peer groups led by passionate Founders/CEOs in a private, intimate environment where everyone can be brutally honest."
     bulletpoints:

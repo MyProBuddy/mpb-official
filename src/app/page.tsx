@@ -9,7 +9,7 @@ import Link from "next/link";
 import { FaCheck } from "react-icons/fa/index.js";
 import LogoGrid from "@/partials/logoGrid";
 import Counter from "@/partials/counter";
-  
+
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
   const testimonial = getListPage("sections/testimonial.md");
@@ -65,9 +65,20 @@ const Home = () => {
       {features.map((feature, index: number) => (
         <section
           key={index}
-          className={`section-sm ${index % 2 === 0 && "bg-gradient-to-b from-transparent to-[#34222E]"}`}
+          className={`section-sm ${index % 2 === 0 && "bg-gradient-to-b to-transparent from-[#34222E]"}`}
+          style={{ padding: "3rem 0" }}
         >
           <div className="container ">
+            <h2
+              className={`mb-12`}
+              style={{
+                fontSize: "48px",
+                lineHeight: "57.6px",
+                textAlign: "center",
+                color: index % 2 === 0 ? "#a17aa7" : "white",
+              }}
+              dangerouslySetInnerHTML={markdownify(feature.heading)}
+            />
             <div className="row items-center justify-between">
               <div
                 className={`mb:md-0 mb-4 md:col-7 ${index % 2 !== 0 && "md:order-2"
@@ -88,20 +99,21 @@ const Home = () => {
                 <h2
                   className="mb-4"
                   style={{
-                    fontSize: "48px",
+                    fontSize: "36px",
                     lineHeight: "57.6px",
                     textAlign: "left",
                   }}
                   dangerouslySetInnerHTML={markdownify(feature.title)}
                 />
                 <p
-                  className="mb-6 text-[#be9a94]"
+                  className="mb-6"
                   style={{
                     fontFamily: "Poppins, Helvetica, Arial, sans-serif",
-                    fontSize: "18px",
+                    fontSize: "16px",
                     lineHeight: "27px",
                     textAlign: "left",
                     letterSpacing: "-0.36px",
+                    color: index % 2 === 0 ? "#be9a94" : "gray",
                   }}
                   dangerouslySetInnerHTML={markdownify(feature.content)}
                 />
