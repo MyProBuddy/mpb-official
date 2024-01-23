@@ -85,6 +85,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@michaelallenwarner/tailwind-grid-inner'),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({
