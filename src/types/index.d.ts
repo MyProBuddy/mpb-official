@@ -62,11 +62,37 @@ export type Testimonial = {
 };
 
 export type Call_to_action = {
+  slides: any;
   enable?: boolean;
   title: string;
   description: string;
   image: string;
   button: Button;
+};
+
+export type Get_your_customers = {
+  enable?: boolean;
+  title: string;
+  description: string;
+  image: string;
+  button: Button;
+  slides: Array<Slide>;
+};
+
+export type Raise_capital = {
+  enable?: boolean;
+  title: string;
+  description: string;
+  image: string;
+  button: Button;
+  funded: Array<Slide>;
+  illustrations: Array<Slide>;
+};
+
+export type Slide = {
+  name: string;
+  image: string;
+  description?: string;
 };
 
 export type Button = {

@@ -1,6 +1,6 @@
 import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
-import { Call_to_action } from "@/types";
+import { Get_your_customers } from "@/types";
 import Link from "next/link";
 import image1 from "../../../public/bg/bumble-background.png";
 
@@ -8,7 +8,7 @@ import image1 from "../../../public/bg/bumble-background.png";
 interface PageData {
   notFound?: boolean;
   content?: string;
-  frontmatter: Call_to_action;
+  frontmatter: Get_your_customers;
   reverse?: boolean;
 }
 
@@ -19,7 +19,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
         <section className="mb-28">
           <div className="container">
             <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-[#044045] to-transparent">
-              <div className={`row items-center justify-between ${data.reverse ? "row-reverse" : ""}`}>
+              <div className={`row items-center justify-between`}>
                 <div className="mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
                   <ImageFallback
                     className="w-full"
