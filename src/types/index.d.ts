@@ -79,9 +79,20 @@ export type Get_your_customers = {
   slides: Array<Slide>;
 };
 
+export type Raise_capital = {
+  enable?: boolean;
+  title: string;
+  description: string;
+  image: string;
+  button: Button;
+  funded: Array<Slide>;
+  illustrations: Array<Slide>;
+};
+
 export type Slide = {
   name: string;
   image: string;
+  description?: string;
 };
 
 export type Button = {
