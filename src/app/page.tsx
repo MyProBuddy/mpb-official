@@ -149,7 +149,7 @@ const Home = () => {
 
       <GetMoreCustomers data={getMoreCustomers} />
       <RaiseCapital data={raiseCapital} />
-      {/* <CounterInfo data={counterinfo} /> */}
+       <CounterInfo data={counterinfo} /> 
 
       <Testimonials data={testimonial} />
       <CallToAction data={callToAction} />

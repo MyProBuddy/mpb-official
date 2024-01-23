@@ -2,7 +2,7 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Get_your_customers } from "@/types";
 import Link from "next/link";
-import image1 from "../../../public/bg/bumble-background.png";
+import image1 from "../../../public/bg/live-chat.png";
 
 
 interface PageData {

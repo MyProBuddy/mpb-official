@@ -2,7 +2,7 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Call_to_action } from "@/types";
 import Link from "next/link";
-import image1 from "../../../public/bg/bumble-background.png";
+import image1 from "../../../public/bg/expert-deck-review.png";
 
 
 interface PageData {
@@ -18,7 +18,7 @@ const CounterInfo = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section className="mb-28">
           <div className="container">
-            <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-transparent to-[#3D0000]">
+            <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-transparent to-[#1a232f]">
               <div className={`row flex-row-reverse items-center justify-between`}>
                 <div className="mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
                   <ImageFallback
@@ -43,25 +43,22 @@ const CounterInfo = ({ data }: { data: PageData }) => {
                     }}
                   />
                   <p
-                    dangerouslySetInnerHTML={markdownify(
-                      data.frontmatter.description,
-                    )}
                     className="mb-6 text-[#be9a94]"
                     style={{
                       fontFamily: "Poppins, Helvetica, Arial, sans-serif",
-                      fontSize: "18px",
+                      fontSize: "15px",
                       lineHeight: "27px",
                       textAlign: "left",
                     }}
-                  />
-                  {data.frontmatter.button.enable && (
+                  >Stuck on something? Don't sweat it. Jump on a call with the Founder guru on the topic and get instant answers to anything from "How to Optimize my Facebook Spend" to "Give me a brutal review of my Pitch Deck."</p>
+                 
                     <Link
                       className="btn btn-primary"
                       href={data.frontmatter.button.link}
                     >
-                      {data.frontmatter.button.label}
+                     Connect With Experts
                     </Link>
-                  )}
+
                 </div>
               </div>
             </div>
