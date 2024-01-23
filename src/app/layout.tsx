@@ -48,9 +48,8 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href={`https://fonts.googleapis.com/css2?family=${pf}${
-            sf ? "&family=" + sf : ""
-          }&display=swap`}
+          href={`https://fonts.googleapis.com/css2?family=${pf}${sf ? "&family=" + sf : ""
+            }&display=swap`}
           rel="stylesheet"
         />
       </head>
@@ -60,7 +59,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           <SearchModal />
-          <main>{children}</main>
+          <main className="dark">{children}</main>
           <Footer />
         </Providers>
       </body>
