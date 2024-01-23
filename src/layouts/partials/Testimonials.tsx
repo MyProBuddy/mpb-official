@@ -34,7 +34,7 @@ const Testimonials = ({ data }: { data: PageData }) => {
                     letterSpacing: "-1.92px",
                     textAlign: "center",
                   }}
-                >What People Says ? </h2>
+                >What People Say </h2>
                 <p
                   dangerouslySetInnerHTML={markdownify(
                     data.frontmatter.description!,

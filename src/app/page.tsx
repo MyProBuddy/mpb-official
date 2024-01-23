@@ -9,11 +9,13 @@ import Link from "next/link";
 import { FaCheck } from "react-icons/fa/index.js";
 import LogoGrid from "@/partials/logoGrid";
 import Counter from "@/partials/counter";
+import GetMoreCustomers from "@/partials/GetMoreCustomers";
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
   const testimonial = getListPage("sections/testimonial.md");
   const callToAction = getListPage("sections/call-to-action.md");
+  const getMoreCustomers = getListPage("sections/get-more-customers.md");
   const { frontmatter } = homepage;
   const {
     banner,
@@ -140,6 +142,7 @@ const Home = () => {
       ))}
       <LogoGrid />
       <Counter />
+      <GetMoreCustomers data={getMoreCustomers} />
 
       <Testimonials data={testimonial} />
       <CallToAction data={callToAction} />

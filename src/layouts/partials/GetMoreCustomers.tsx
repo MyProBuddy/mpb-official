@@ -1,35 +1,39 @@
+"use client";
+
 import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
-import { Get_your_customers } from "@/types";
+import { Call_to_action, Slide } from "@/types";
 import Link from "next/link";
 import image1 from "../../../public/bg/bumble-background.png";
+import "swiper/css";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 
 interface PageData {
   notFound?: boolean;
   content?: string;
-  frontmatter: Get_your_customers;
-  reverse?: boolean;
+  frontmatter: Call_to_action;
 }
 
-const CallToAction = ({ data }: { data: PageData }) => {
+const GetMoreCustomers = ({ data }: { data: PageData }) => {
   return (
     <>
       {data.frontmatter.enable && (
-        <section className="mb-28">
+        <section>
           <div className="container">
-            <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-[#044045] to-transparent">
+            <div className="rounded-xl px-4 xl:p-20 bg-gradient-to-t from-[#7b3f30] to-transparent">
               <div className={`row items-center justify-between`}>
-                <div className="mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
+                <div className="hidden md:block mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
                   <ImageFallback
-                    className="w-full"
+                    className="w-full h-auto "
                     src={image1}
                     width={392}
                     height={390}
                     alt="cta-image"
                   />
                 </div>
-                <div className="md:col-5 md:order-1">
+                <div className="md:col-5 md:order-2">
                   <h2
                     dangerouslySetInnerHTML={markdownify(
                       data.frontmatter.title,
@@ -64,6 +68,39 @@ const CallToAction = ({ data }: { data: PageData }) => {
                   )}
                 </div>
               </div>
+              <Swiper
+                modules={[Autoplay, Pagination]}
+                pagination={{ clickable: true }}
+                loop={true}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                spaceBetween={24}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 2,
+                  },
+                  992: {
+                    slidesPerView: 3,
+                  },
+                }}
+              >
+                  {data.frontmatter.slides.map(
+                    (item: Slide, index: number) => (
+                      <SwiperSlide key={index}>
+                        <ImageFallback
+                          height={200}
+                          width={200}
+                          className="w-full h-auto rounded-2xl"
+                          src={item.image}
+                          alt={item.name}
+                        />
+                      </SwiperSlide>
+                    ))}
+              </Swiper>
+                
             </div>
           </div>
         </section>
@@ -72,4 +109,4 @@ const CallToAction = ({ data }: { data: PageData }) => {
   );
 };
 
-export default CallToAction;
+export default GetMoreCustomers;
