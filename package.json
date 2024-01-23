@@ -16,7 +16,7 @@
     "remove-darkmode": "node scripts/removeDarkmode.js && yarn format"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "18.17.0"
   },
   "dependencies": {
     "@michaelallenwarner/tailwind-grid-inner": "^1.0.3",
