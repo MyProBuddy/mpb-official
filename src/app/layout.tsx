@@ -17,7 +17,7 @@ export default function RootLayout({
   const sf = theme.fonts.font_family.secondary;
 
   return (
-    <html suppressHydrationWarning={true} lang="en">
+    <html className="dark" suppressHydrationWarning={true} lang="en">
       <head>
         {/* responsive meta */}
         <meta
@@ -28,7 +28,7 @@ export default function RootLayout({
         {/* favicon */}
         <link rel="shortcut icon" href={config.site.favicon} />
         {/* theme meta */}
-        <meta name="theme-name" content="nextplate" />
+        <meta name="theme-name" content="dark" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="theme-color"
@@ -59,7 +59,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           <SearchModal />
-          <main className="dark">{children}</main>
+          <main>{children}</main>
           <Footer />
         </Providers>
       </body>
