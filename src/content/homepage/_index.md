@@ -3,7 +3,7 @@
 banner:
   title: "Online Startup Accelerator"
   content: "Accelerate your startup's growth exponentially while retaining full ownership – no need to relinquish a single percentage of equity."
-  image: "/images/banner.png"
+  image: "/bg/how-it-works-w-labels.png"
   button:
     enable: true
     label: "Lets do it"
@@ -11,43 +11,41 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Nextplate"
-    image: "/images/service-1.png"
-    content: "Nextplate is a comprehensive starter template that includes everything you need to get started with your Next project. What's Included in Nextplate"
+  - title: "Customized Action Plan"
+    image: "/bg/callout-custom-funding-plan.png"
+    content: "You tell us what you want to achieve, we'll build a kick-ass plan to get it done fast. We'll customize your plan to take advantage of the playbooks of thousands of startups before you."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Next and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Setting Goals"
+      - "Preparation with Workshops & Advisors"
+      - "Networking & Bulding Community"
+      - "Pitching & Fund rising"
     button:
-      enable: false
-      label: "Get Started Now"
+      enable: true
+      label: "Build Your Plan"
       link: "#"
 
-  - title: "Discover the Key Features Of Next"
-    image: "/images/service-2.png"
-    content: "Next is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+  - title: "Curated Peer Groups"
+    image: "/bg/CuratedPeerGroups.png"
+    content: "Join hand-curated peer groups led by passionate Founders/CEOs in a private, intimate environment where everyone can be brutally honest."
     bulletpoints:
       - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
       - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
       - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
     button:
       enable: true
-      label: "Get Started Now"
+      label: "Find Your Groups"
       link: "https://github.com/zeon-studio/nextplate"
 
-  - title: "The Top Reasons to Choose Next for Your Next Project"
-    image: "/images/service-3.png"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
-    button:
-      enable: false
-      label: ""
-      link: ""
+  # - title: "The Top Reasons to Choose Next for Your Next Project"
+  #   image: "/images/service-3.png"
+  #   content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+  #   bulletpoints:
+  #     - "Instantly load static sites for better user experience and SEO."
+  #     - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
+  #     - "Use any front-end library or framework, or build custom components, for any project size."
+  #     - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+  #   button:
+  #     enable: false
+  #     label: ""
+  #     link: ""
 ---
