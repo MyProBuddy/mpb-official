@@ -18,7 +18,17 @@ const CallToAction = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section className="mb-28">
           <div className="container">
-            <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-[#044045] to-transparent">
+             <h2
+              className={`mb-12`}
+              style={{
+                fontSize: "48px",
+                lineHeight: "57.6px",
+                textAlign: "center",
+                color: "white",
+                background: "linear-gradient(to right, #f57114, #5e2591)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"
+              }}
+            >Plan For Sale</h2>
+            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#044045] to-transparent">
               <div className={`row items-center justify-between`}>
                 <div className="mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
                   <ImageFallback
@@ -36,10 +46,9 @@ const CallToAction = ({ data }: { data: PageData }) => {
                     )}
                     className="mb-2"
                     style={{
-                      fontSize: "48px",
+                      fontSize: "40px",
                       lineHeight: "57.6px",
                       textAlign: "left",
-
                     }}
                   />
                   <p

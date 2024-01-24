@@ -20,9 +20,10 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
   return (
     <>
       {data.frontmatter.enable && (
-        <section className="mt-24">
+        <section className="mt-10">
           <div className="container">
-            <h1 className="text-center mb-12 text-6xl">Raise Capital</h1>
+            <h1 className="text-center mb-12 text-6xl"
+            style={{ background: "linear-gradient(to right, #f57114, #5e2591)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"}}>Raise Capital</h1>
 
             <div className="rounded-xl p-4 xl:p-20 bg-gradient-to-b from-[#2a313d] to-transparent">
               <div className={`row items-center justify-between`}>
@@ -113,7 +114,7 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                       </SwiperSlide>
                     ))}
               </Swiper>
-              
+
               <div className="flex items-center justify-stretch mt-20">
                 <div className="flex flex-col items-center justify-center w-full border-0 md:border-r-[1px] border-white/30">
                   <ImageFallback
@@ -123,7 +124,7 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                     src={"/bg/rc/illustrations/icon-tree-raised.svg"}
                     alt={"Raise Capital Icon"}
                   />
-                  <h2>$600 Million Raised</h2>
+                  <h2>$6 Million Raised</h2>
                 </div>
                 <div className="flex flex-col items-center justify-center w-full border-0 md:border-l-[1px] border-white/30">
                   <ImageFallback
@@ -133,7 +134,7 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                     src={"/bg/rc/illustrations/icon-ipo-handshake.svg"}
                     alt={"Raise Capital Icon"}
                   />
-                  <h2>15 Startup IPOs</h2>
+                  <h2>1M+ Startups Assisted</h2>
                 </div>
               </div>
             </div>

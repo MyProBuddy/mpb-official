@@ -9,15 +9,15 @@ import Link from "next/link";
 import { FaCheck } from "react-icons/fa/index.js";
 import LogoGrid from "@/partials/logoGrid";
 import Counter from "@/partials/counter";
-import GetMoreCustomers from "@/partials/GetMoreCustomers";
 import CounterInfo from "@/partials/CounterInfo";
 import RaiseCapital from "@/partials/RaiseCapital";
+import InteractiveCourses from "@/partials/InteractiveCourses";
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
   const testimonial = getListPage("sections/testimonial.md");
   const callToAction = getListPage("sections/call-to-action.md");
-  const getMoreCustomers = getListPage("sections/get-more-customers.md");
+  const interactiveCourses = getListPage("sections/interactive-courses.md");
   const raiseCapital = getListPage("sections/raise-capital.md");
   const counterinfo = getListPage("sections/counterinfo.md");
   const { frontmatter } = homepage;
@@ -37,17 +37,16 @@ const Home = () => {
           <div className="row justify-center mt-10">
             <div className="mb-16 text-center lg:col-7">
               <h1
-                className="head1 mb-4 text-5xl font-bold"
+                className="head1 mb-4 text-6xl font-bold"
                 style={{ background: "linear-gradient(to right, #f57114, #5e2591)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
                 dangerouslySetInnerHTML={markdownify(banner.title)}
               />
-
               <p
-                className="mb-8"
+                className="mb-8 text-lg"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               />
               {banner.button!.enable && (
-                <Link className="btn btn-primary" href={banner.button!.link} style={{ background: "linear-gradient(to right, #f57114, #5e2591)", outline: "none", border: "none", color: "white", padding: "0.75rem 2.5rem" }}>
+                <Link className="btn btn-primary text-lg" href={banner.button!.link} style={{ background: "linear-gradient(to right, #f57114, #5e2591)", outline: "none", border: "none", color: "white", padding: "0.75rem 2.5rem" }}>
                   {banner.button!.label}
                 </Link>
               )}
@@ -67,15 +66,15 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <CallToAction data={callToAction} />
       {features.map((feature, index: number) => (
         <section
           key={index}
           className={`section-sm ${index % 2 === 0 && "bg-gradient-to-b to-transparent from-[#34222E]"}`}
-          style={{ padding: "3rem 0" }}
+          style={{ padding: "3rem 0",  marginTop: "3rem" }}
         >
           <div className="container ">
-            <h2
+            {/* <h2
               className={`mb-12`}
               style={{
                 fontSize: "48px",
@@ -84,7 +83,7 @@ const Home = () => {
                 color: index % 2 === 0 ? "#a17aa7" : "white",
               }}
               dangerouslySetInnerHTML={markdownify(feature.heading)}
-            />
+            /> */}
             <div className="row items-center justify-between">
               <div
                 className={`mb:md-0 mb-4 md:col-7 ${index % 2 !== 0 && "md:order-2"
@@ -147,12 +146,12 @@ const Home = () => {
       <LogoGrid />
       <Counter />
 
-      <GetMoreCustomers data={getMoreCustomers} />
       <RaiseCapital data={raiseCapital} />
-       <CounterInfo data={counterinfo} /> 
+      <InteractiveCourses data={interactiveCourses} />
+      <CounterInfo data={counterinfo} />
 
       <Testimonials data={testimonial} />
-      <CallToAction data={callToAction} />
+
     </>
   );
 };

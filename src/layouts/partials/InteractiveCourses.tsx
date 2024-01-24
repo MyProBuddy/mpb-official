@@ -4,7 +4,6 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Call_to_action, Slide } from "@/types";
 import Link from "next/link";
-import image1 from "../../../public/bg/bumble-background.png";
 import "swiper/css";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,23 +15,14 @@ interface PageData {
   frontmatter: Call_to_action;
 }
 
-const InteractiveCourses = ({ data }: { data: PageData }) => {
+const GetMoreCustomers = ({ data }: { data: PageData }) => {
   return (
     <>
       {data.frontmatter.enable && (
         <section>
           <div className="container">
-            <div className="rounded-xl p-4 xl:p-20 bg-gradient-to-t from-[#7b3f30] to-transparent">
+            <div className="rounded-xl p-4 xl:p-20 bg-gradient-to-t from-[#2a313d] to-transparent">
               <div className={`row items-center justify-between`}>
-                <div className="hidden md:block mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
-                  <ImageFallback
-                    className="w-full h-auto"
-                    src={image1}
-                    width={392}
-                    height={390}
-                    alt="cta-image"
-                  />
-                </div>
                 <div className="md:col-5 md:order-2">
                   <h2
                     dangerouslySetInnerHTML={markdownify(
@@ -67,9 +57,18 @@ const InteractiveCourses = ({ data }: { data: PageData }) => {
                     </Link>
                   )}
                 </div>
+                <div className="hidden md:block md:col-7 lg:col-7 md:order-2 md:mb-0">
+                  <ImageFallback
+                    className="w-full h-auto rounded-2xl"
+                    src={data.frontmatter.image}
+                    width={392}
+                    height={390}
+                    alt="cta-image"
+                  />
+                </div>
               </div>
               <div className="flex items-center mb-2">
-                <span className="text-white font-bold">Launched on our Platforms</span>
+                <span className="text-white font-bold">Browse Courses</span>
                 <hr className="flex-1 ml-4 opacity-30 border-[1px]"/>
               </div>
               <Swiper
@@ -113,4 +112,4 @@ const InteractiveCourses = ({ data }: { data: PageData }) => {
   );
 };
 
-export default InteractiveCourses;
+export default GetMoreCustomers;
