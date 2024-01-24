@@ -47,24 +47,9 @@ const Home = () => {
               />
 
               <p
-                className="mb-8 text-lg"
+                className="text-lg"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               />
-              {banner.button!.enable && (
-                <Link
-                  className="btn btn-primary"
-                  href={banner.button!.link}
-                  style={{
-                    background: "linear-gradient(to right, #f57114, #5e2591)",
-                    outline: "none",
-                    border: "none",
-                    color: "white",
-                    padding: "0.75rem 2.5rem",
-                  }}
-                >
-                  {banner.button!.label}
-                </Link>
-              )}
             </div>
             {banner.image && (
               <div className="col-12">
@@ -77,6 +62,23 @@ const Home = () => {
                   priority
                 />
               </div>
+            )}
+          </div>
+          <div className="flex justify-center items-center w-full mt-3">
+            {banner.button!.enable && (
+              <Link
+                className="btn btn-primary"
+                href={banner.button!.link}
+                style={{
+                  background: "linear-gradient(to right, #f57114, #5e2591)",
+                  outline: "none",
+                  border: "none",
+                  color: "white",
+                  padding: "0.75rem 2.5rem",
+                }}
+              >
+                {banner.button!.label}
+              </Link>
             )}
           </div>
         </div>
