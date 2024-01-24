@@ -35,19 +35,33 @@ const Home = () => {
       <section className="section pt-14">
         <div className="container">
           <div className="row justify-center mt-10">
-            <div className="mb-16 text-center lg:col-7">
+            <div className="mb-16 text-center lg:col-8">
               <h1
-                className="head1 mb-4 text-5xl font-bold"
-                style={{ background: "linear-gradient(to right, #f57114, #5e2591)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
+                className="head1 mb-4 text-7xl font-bold"
+                style={{
+                  background: "linear-gradient(to right, #f57114, #5e2591)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
                 dangerouslySetInnerHTML={markdownify(banner.title)}
               />
 
               <p
-                className="mb-8"
+                className="mb-8 text-lg"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               />
               {banner.button!.enable && (
-                <Link className="btn btn-primary" href={banner.button!.link} style={{ background: "linear-gradient(to right, #f57114, #5e2591)", outline: "none", border: "none", color: "white", padding: "0.75rem 2.5rem" }}>
+                <Link
+                  className="btn btn-primary"
+                  href={banner.button!.link}
+                  style={{
+                    background: "linear-gradient(to right, #f57114, #5e2591)",
+                    outline: "none",
+                    border: "none",
+                    color: "white",
+                    padding: "0.75rem 2.5rem",
+                  }}
+                >
                   {banner.button!.label}
                 </Link>
               )}
@@ -75,20 +89,25 @@ const Home = () => {
           style={{ padding: "3rem 0" }}
         >
           <div className="container ">
-            <h2
-              className={`mb-12`}
-              style={{
-                fontSize: "48px",
-                lineHeight: "57.6px",
-                textAlign: "center",
-                color: index % 2 === 0 ? "#a17aa7" : "white",
-              }}
-              dangerouslySetInnerHTML={markdownify(feature.heading)}
-            />
+            {index % 2 !== 0 ? (
+              <h2
+                className={`mb-12`}
+                style={{
+                  fontSize: "48px",
+                  lineHeight: "57.6px",
+                  textAlign: "center",
+                  color: index % 2 === 0 ? "#a17aa7" : "white",
+                }}
+                dangerouslySetInnerHTML={markdownify(feature.heading)}
+              />
+            ) : (
+              <div className="mt-12"></div>
+            )}
             <div className="row items-center justify-between">
               <div
-                className={`mb:md-0 mb-4 md:col-7 ${index % 2 !== 0 && "md:order-2"
-                  }`}
+                className={`mb:md-0 mb-4 md:col-7 ${
+                  index % 2 !== 0 && "md:order-2"
+                }`}
               >
                 <ImageFallback
                   src={feature.image}
@@ -99,8 +118,9 @@ const Home = () => {
               </div>
 
               <div
-                className={`md:col-7 lg:col-4 ${index % 2 !== 0 && "md:order-1"
-                  }`}
+                className={`md:col-7 lg:col-4 ${
+                  index % 2 !== 0 && "md:order-1"
+                }`}
               >
                 <h2
                   className="mb-4"
@@ -147,9 +167,9 @@ const Home = () => {
       <LogoGrid />
       <Counter />
 
-      <GetMoreCustomers data={getMoreCustomers} />
+      {/* <GetMoreCustomers data={getMoreCustomers} /> */}
       <RaiseCapital data={raiseCapital} />
-       <CounterInfo data={counterinfo} /> 
+      <CounterInfo data={counterinfo} />
 
       <Testimonials data={testimonial} />
       <CallToAction data={callToAction} />
