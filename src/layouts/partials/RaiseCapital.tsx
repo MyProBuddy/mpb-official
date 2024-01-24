@@ -9,7 +9,6 @@ import "swiper/css";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 interface PageData {
   notFound?: boolean;
   content?: string;
@@ -37,7 +36,6 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                       fontSize: "48px",
                       lineHeight: "57.6px",
                       textAlign: "left",
-
                     }}
                   />
                   <p
@@ -62,23 +60,30 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                   )}
                 </div>
                 <div className="hidden md:flex items-center justify-stretch mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
-                  {data.frontmatter.illustrations.map((item: Slide, index: number) => (
-                    <div className="flex flex-col items-start justify-around m-1 rounded-2xl p-6 py-8 bg-slate-900" key={index}>
-                      <ImageFallback
-                        height={50}
-                        width={50}
-                        className="w-16 h-16 rounded-2xl mb-10"
-                        src={item.image}
-                        alt={item.name}
-                      />
-                      <span className="text-white font-semibold">{item.name}</span>
-                    </div>
-                  ))}
+                  {data.frontmatter.illustrations.map(
+                    (item: Slide, index: number) => (
+                      <div
+                        className="flex flex-col items-start justify-around m-1 rounded-2xl p-6 py-8 bg-slate-900"
+                        key={index}
+                      >
+                        <ImageFallback
+                          height={50}
+                          width={50}
+                          className="w-16 h-16 rounded-2xl mb-10"
+                          src={item.image}
+                          alt={item.name}
+                        />
+                        <span className="text-white font-semibold">
+                          {item.name}
+                        </span>
+                      </div>
+                    ),
+                  )}
                 </div>
               </div>
               <div className="flex items-center mb-2 mt-12">
                 <span className="text-white font-bold">Recently Funded</span>
-                <hr className="flex-1 ml-4 opacity-30 border-[1px]"/>
+                <hr className="flex-1 ml-4 opacity-30 border-[1px]" />
               </div>
               <Swiper
                 modules={[Autoplay, Pagination]}
@@ -99,21 +104,25 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                   },
                 }}
               >
-                  {data.frontmatter.funded.map(
-                    (item: Slide, index: number) => (
-                      <SwiperSlide key={index}>
-                        <ImageFallback
-                          height={200}
-                          width={200}
-                          className="w-full h-auto rounded-2xl"
-                          src={item.image}
-                          alt={item.name}
-                        />
-                        <span className="block font-semibold text-white text-lg">{item.name}</span>
-                        <span className="block font-semibold">{item.description}</span>
-                      </SwiperSlide>
-                    ))}
+                {data.frontmatter.funded.map((item: Slide, index: number) => (
+                  <SwiperSlide key={index}>
+                    <ImageFallback
+                      height={200}
+                      width={200}
+                      className="w-full h-auto rounded-2xl"
+                      src={item.image}
+                      alt={item.name}
+                    />
+                    <span className="block font-semibold text-white text-lg">
+                      {item.name}
+                    </span>
+                    <span className="block font-semibold">
+                      {item.description}
+                    </span>
+                  </SwiperSlide>
+                ))}
               </Swiper>
+
 
               <div className="flex items-center justify-stretch mt-20">
                 <div className="flex flex-col items-center justify-center w-full border-0 md:border-r-[1px] border-white/30">
@@ -124,7 +133,7 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                     src={"/bg/rc/illustrations/icon-tree-raised.svg"}
                     alt={"Raise Capital Icon"}
                   />
-                  <h2>$6 Million Raised</h2>
+                  <h2>$6 Million+ Raised</h2>
                 </div>
                 <div className="flex flex-col items-center justify-center w-full border-0 md:border-l-[1px] border-white/30">
                   <ImageFallback
@@ -146,3 +155,4 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
 };
 
 export default RaiseCapital;
+

@@ -9,19 +9,14 @@
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Join as Investor",
+      "url": "/join-investor"
     }
   ],
   "footer": [
     {
       "name": "Rook",
       "url": "https://rookhq.com"
-
     },
     {
       "name": "Rook Fellows",

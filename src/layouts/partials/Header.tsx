@@ -151,8 +151,15 @@ const Header = () => {
           {/* <ThemeSwitcher className="mr-5" /> */}
           {navigation_button.enable && (
             <Link
-              className="btn btn-outline-primary btn-sm hidden lg:inline-block"
+              className="btn btn-primary"
               href={navigation_button.link}
+              style={{
+                background: "linear-gradient(to right, #f57114, #5e2591)",
+                outline: "none",
+                border: "none",
+                color: "white",
+                padding: "0.47rem 2rem",
+              }}
             >
               {navigation_button.label}
             </Link>
