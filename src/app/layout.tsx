@@ -6,6 +6,7 @@ import Footer from "@/partials/Footer";
 import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
 import "@/styles/main.scss";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -44,7 +45,6 @@ export default function RootLayout({
           media="(prefers-color-scheme: dark)"
           content="#000"
         />
-
         {/* google font css */}
         <link
           rel="preconnect"
@@ -67,6 +67,10 @@ export default function RootLayout({
           <Footer />
         </Providers>
       </body>
+      <Script
+id="wati"
+src='//in.fw-cdn.com/31672396/848304.js'>
+</Script>
     </html>
   );
 }

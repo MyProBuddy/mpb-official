@@ -22,19 +22,19 @@ illustrations:
     image: "/bg/rc/illustrations/icon-investor-research.svg"
 
 funded:
-  - name: "Rhone Apparel"
-    description: "$37M Raised"
-    image: "/bg/rc/funded/rhone.jpg"
+  - name: "Live Stockify"
+    description: "Incubation Support"
+    image: "/client/img3.png"
 
-  - name: "Arcimoto"
-    description: "$19M Raised"
-    image: "/bg/rc/funded/arcimoto.jpg"
+  - name: "Tradent"
+    description: "Business Strategy & Fund Raising"
+    image: "/client/img2.png"
 
-  - name: "Unyq"
-    description: "$4.3M Raised"
-    image: "/bg/rc/funded/unyq.jpg"
+  - name: "Hion Studios"
+    description: "Business Development"
+    image: "/client/img4.png"
 
-  - name: "Laired Superfoods"
-    description: "$51M Raised"
-    image: "/bg/rc/funded/laird.jpg"
+  - name: "Aquasol"
+    description: "GTM Strategy"
+    image: "/client/img1.png"
 ---

@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Nextplate",
-    "base_url": "https://nextplate.netlify.app",
+    "title": "MyProBuddy - Your Startup Accelerator Buddy | Fuel Your Business in India",
+    "base_url": "myprobuddy.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "286",
     "logo_height": "59",
-    "logo_text": "Nextplate"
+    "logo_text": "MyProBuddy"
   },
   "settings": {
     "search": true,
@@ -22,7 +22,7 @@
   },
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "Designed And Developed by Rook Fellows"
   },
   "navigation_button": {
     "enable": true,
@@ -35,8 +35,9 @@
     "settings": {}
   },
   "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "/images/og-image.png",
-    "meta_description": "Next Boilerplate"
+    "meta_author": "MyProBuddy",
+    "meta_image": "/assets/logo.png",
+    "meta_description": "MyProBuddy: Empowering the next generation of entrepreneurs through student startup acceleration, mentorship, and resources. Launch your legendary venture today!",
+    "meta_keywords": "startup accelerator, student accelerator, India, entrepreneurship, business, college students, funding, mentorship, growth, MyProBuddy"
   }
 }
