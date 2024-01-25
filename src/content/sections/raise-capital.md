@@ -9,16 +9,16 @@ button:
   link: "https://github.com/zeon-studio/nextplate"
 
 illustrations:
-  - name: "Fundraise Strategy"
+  - name: "Grants"
     image: "/bg/rc/illustrations/icon-fundraise-strategy.svg"
 
-  - name: "Pitch Deck Creation"
+  - name: "Venture Capitalists"
     image: "/bg/rc/illustrations/icon-pitch-deck-creation.svg"
 
-  - name: "Step-by-Step Courses"
+  - name: "Angel Investors"
     image: "/bg/rc/illustrations/icon-step-courses.svg"
 
-  - name: "Investor Research"
+  - name: "Debt Funding"
     image: "/bg/rc/illustrations/icon-investor-research.svg"
 
 funded:

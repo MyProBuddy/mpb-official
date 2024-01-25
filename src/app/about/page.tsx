@@ -34,6 +34,11 @@ const About = () => {
               <h2
                 dangerouslySetInnerHTML={markdownify(title)}
                 className="h3 mb-6"
+                style={{
+                  background: "linear-gradient(to right, #f57114, #5e2591)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
               />
               <div className="content">
                 <MDXContent content={content} />

@@ -20,7 +20,7 @@ export default function Counter() {
                             {/* <img src="image2.jpg" alt="Projects" className="mb-4" /> */}
                             <Image alt={"projects"} src={icon2} height={200} width={200} />
                             <h3 className="text-4xl font-semibold text-[#d15e5e]" style={{ fontSize: '75px', lineHeight: '96px', textAlign: 'center' }}>100+</h3>
-                            <p className=" text-[#be4444]" style={{ fontSize: '20px', lineHeight: '36px', textAlign: 'center' }}>Projects Completed</p>
+                            <p className=" text-[#be4444]" style={{ fontSize: '20px', lineHeight: '36px', textAlign: 'center' }}>Milestones Completed</p>
                         </div>
                     </div>
                 </div>

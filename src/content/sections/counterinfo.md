@@ -6,5 +6,5 @@ description: "Whether you're trying to find your first customer or scale to mill
 button:
   enable: false
   label: "Meet Your Advisor"
-  link: "https://github.com/zeon-studio/nextplate"
+  link: "https://calendly.com/myprobuddy"
 ---

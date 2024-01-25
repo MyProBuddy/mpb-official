@@ -12,6 +12,7 @@ import Counter from "@/partials/counter";
 import CounterInfo from "@/partials/CounterInfo";
 import RaiseCapital from "@/partials/RaiseCapital";
 import InteractiveCourses from "@/partials/InteractiveCourses";
+import FeaturedIn from "@/partials/featuredin";
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
@@ -32,12 +33,13 @@ const Home = () => {
   return (
     <>
       <SeoMeta />
-      <section className="section pt-14">
+      <section className="section" style={{paddingTop: "0px", paddingBottom: "6rem"}}>
+        <div className="h-24" style={{background: "linear-gradient(to bottom, #ffffff22, transparent)"}}></div>
         <div className="container">
-          <div className="row justify-center mt-10">
-            <div className="mb-16 text-center lg:col-8">
+          <div className="row justify-center">
+            <div className="mb-6 text-center lg:col-8">
               <h1
-                className="head1 mb-4 text-7xl font-bold"
+                className="head1 mb-4 text-6xl font-bold"
                 style={{
                   background: "linear-gradient(to right, #f57114, #5e2591)",
                   WebkitBackgroundClip: "text",
@@ -55,15 +57,15 @@ const Home = () => {
                 <ImageFallback
                   src={banner.image}
                   className="mx-auto"
-                  width="1100"
-                  height="550"
+                  width="2000"
+                  height="932"
                   alt="banner image"
                   priority
                 />
               </div>
             )}
           </div>
-          <div className="flex justify-center items-center w-full mt-3">
+          {/* <div className="flex justify-center items-center w-full mt-3">
             {banner.button!.enable && (
               <Link
                 className="btn btn-primary"
@@ -79,10 +81,11 @@ const Home = () => {
                 {banner.button!.label}
               </Link>
             )}
-          </div>
+          </div> */}
         </div>
       </section>
       <CallToAction data={callToAction} />
+       <CounterInfo data={counterinfo} />
       {features.map((feature, index: number) => (
         <section
           key={index}
@@ -171,7 +174,9 @@ const Home = () => {
       {/* <GetMoreCustomers data={getMoreCustomers} /> */}
       <RaiseCapital data={raiseCapital} />
       <InteractiveCourses data={interactiveCourses} />
-      <CounterInfo data={counterinfo} />
+
+
+      <FeaturedIn/>
 
       <Testimonials data={testimonial} />
 

@@ -16,7 +16,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
   return (
     <>
       {data.frontmatter.enable && (
-        <section className="mb-28">
+        <section className="">
           <div className="container">
              <h2
               className={`mb-12`}
@@ -25,9 +25,9 @@ const CallToAction = ({ data }: { data: PageData }) => {
                 lineHeight: "57.6px",
                 textAlign: "center",
                 color: "white",
-                background: "linear-gradient(to right, #f57114, #5e2591)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"
+
               }}
-            >Plan For Sale</h2>
+            >Get Expert Help</h2>
             <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#044045] to-transparent">
               <div className={`row items-center justify-between`}>
                 <div className="mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
@@ -66,9 +66,9 @@ const CallToAction = ({ data }: { data: PageData }) => {
                   {data.frontmatter.button.enable && (
                     <Link
                       className="btn btn-primary"
-                      href={data.frontmatter.button.link}
+                      href="https://calendly.com/myprobuddy"
                     >
-                      {data.frontmatter.button.label}
+                     Get Connected
                     </Link>
                   )}
                 </div>

@@ -51,9 +51,9 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                   {data.frontmatter.button.enable && (
                     <Link
                       className="btn btn-primary"
-                      href={data.frontmatter.button.link}
+                      href="https://www.notion.so/414fbbfd0e284746b9ce201d6c9022bf?v=8f13602cf0404371a9abb14b756dcc19"
                     >
-                      {data.frontmatter.button.label}
+                     Know More
                     </Link>
                   )}
                 </div>

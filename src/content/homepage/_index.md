@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "Online Startup Accelerator"
-  content: "Accelerate your startup's growth exponentially while retaining full ownership – no need to relinquish a single percentage of equity."
+  title: "Student Startup Accelerator"
+  content: "Launch Your Business with Confidence: Your All-in-One Startup Accelerator"
   image: "/bg/how-it-works-w-labels.png"
   button:
     enable: true
@@ -22,8 +22,8 @@ features:
       - "Pitching & Fund rising"
     button:
       enable: true
-      label: "Build Your Plan"
-      link: "#"
+      label: "Let's Build Your Plan"
+      link: "https://fellows.rookhq.com"
 
   - title: "Curated Peer Groups"
     heading: "Grow Your Network"
@@ -35,8 +35,8 @@ features:
       - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
     button:
       enable: true
-      label: "Find Your Groups"
-      link: "https://github.com/zeon-studio/nextplate"
+      label: "Join the Community"
+      link: "https://www.linkedin.com/groups/14304535/"
 
   # - title: "The Top Reasons to Choose Next for Your Next Project"
   #   image: "/images/service-3.png"

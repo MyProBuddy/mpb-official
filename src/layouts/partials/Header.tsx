@@ -152,7 +152,7 @@ const Header = () => {
           {navigation_button.enable && (
             <Link
               className="btn btn-primary"
-              href={navigation_button.link}
+              href="https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mpb_startup_assistance_form"
               style={{
                 background: "linear-gradient(to right, #f57114, #5e2591)",
                 outline: "none",

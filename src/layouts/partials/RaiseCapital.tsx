@@ -22,7 +22,7 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
         <section className="mt-10">
           <div className="container">
             <h1 className="text-center mb-12 text-6xl"
-            style={{ background: "linear-gradient(to right, #f57114, #5e2591)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"}}>Raise Capital</h1>
+           >Raise Capital</h1>
 
             <div className="rounded-xl p-4 xl:p-20 bg-gradient-to-b from-[#2a313d] to-transparent">
               <div className={`row items-center justify-between`}>
@@ -53,17 +53,17 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                   {data.frontmatter.button.enable && (
                     <Link
                       className="btn btn-primary"
-                      href={data.frontmatter.button.link}
+                      href="https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mpb_startup_assistance_form"
                     >
                       {data.frontmatter.button.label}
                     </Link>
                   )}
                 </div>
-                <div className="hidden md:flex items-center justify-stretch mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
+                <div className="hidden md:grid md:grid-cols-4 mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
                   {data.frontmatter.illustrations.map(
                     (item: Slide, index: number) => (
                       <div
-                        className="flex flex-col items-start justify-around m-1 rounded-2xl p-6 py-8 bg-slate-900"
+                        className="flex flex-col items-center justify-around m-1 rounded-2xl p-6 py-8 bg-slate-900"
                         key={index}
                       >
                         <ImageFallback
@@ -73,7 +73,7 @@ const RaiseCapital = ({ data }: { data: PageData }) => {
                           src={item.image}
                           alt={item.name}
                         />
-                        <span className="text-white font-semibold">
+                        <span className="text-white font-semibold text-center">
                           {item.name}
                         </span>
                       </div>

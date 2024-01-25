@@ -3,6 +3,7 @@
 import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Testimonial } from "@/types";
+import Link from "next/link";
 import "swiper/css";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,6 +17,63 @@ interface PageData {
     description?: string;
     testimonials: Array<Testimonial>;
   };
+}
+
+const Attestant = ({ data }: { data: Testimonial }) => {
+
+  if (data.link) return (
+    <div className="mt-11 flex items-center">
+      <Link href={data.link} className="text-dark dark:text-white">
+        <ImageFallback
+          height={50}
+          width={50}
+          className="rounded-full"
+          src={data.avatar}
+          alt={data.name}
+        />
+      </Link>
+      <div className="ml-4">
+        <Link href={data.link}>
+          <h3
+            dangerouslySetInnerHTML={markdownify(data.name)}
+            className="h5 font-primary font-semibold"
+          />
+        </Link>
+        <p
+          dangerouslySetInnerHTML={markdownify(
+            data.designation,
+          )}
+          className="text-dark dark:text-white"
+        />
+      </div>
+    </div>
+  )
+
+  return (
+    <div className="mt-11 flex items-center">
+      <div className="text-dark dark:text-white">
+        <ImageFallback
+          height={50}
+          width={50}
+          className="rounded-full"
+          src={data.avatar}
+          alt={data.name}
+          />
+      </div>
+      <div className="ml-4">
+        <h3
+          dangerouslySetInnerHTML={markdownify(data.name)}
+          className="h5 font-primary font-semibold"
+        />
+        <p
+          dangerouslySetInnerHTML={markdownify(
+            data.designation,
+          )}
+          className="text-dark dark:text-white"
+          />
+      </div>
+    </div>
+  )
 }
 
 const Testimonials = ({ data }: { data: PageData }) => {
@@ -63,8 +121,8 @@ const Testimonials = ({ data }: { data: PageData }) => {
                 >
                   {data.frontmatter.testimonials.map(
                     (item: Testimonial, index: number) => (
-                      <SwiperSlide key={index}>
-                        <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light">
+                      <SwiperSlide className="flex" key={index}>
+                        <div className="rounded-lg bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light h-full">
                           <div className="text-dark dark:text-white">
                             <svg
                               width="33"
@@ -83,29 +141,9 @@ const Testimonials = ({ data }: { data: PageData }) => {
                             className="mt-8"
                             dangerouslySetInnerHTML={markdownify(item.content)}
                           />
-                          <div className="mt-11 flex items-center">
-                            <div className="text-dark dark:text-white">
-                              <ImageFallback
-                                height={50}
-                                width={50}
-                                className="rounded-full"
-                                src={item.avatar}
-                                alt={item.name}
-                              />
-                            </div>
-                            <div className="ml-4">
-                              <h3
-                                dangerouslySetInnerHTML={markdownify(item.name)}
-                                className="h5 font-primary font-semibold"
-                              />
-                              <p
-                                dangerouslySetInnerHTML={markdownify(
-                                  item.designation,
-                                )}
-                                className="text-dark dark:text-white"
-                              />
-                            </div>
-                          </div>
+
+                          <Attestant data={item} />
+
                         </div>
                       </SwiperSlide>
                     ),

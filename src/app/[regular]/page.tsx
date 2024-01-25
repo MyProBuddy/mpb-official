@@ -33,7 +33,7 @@ const RegularPages = ({ params }: { params: { regular: string } }) => {
         title={title}
         meta_title={meta_title}
         description={description}
-        image={image}
+        image="/assets/logo1.png"
       />
       <PageHeader title={title} />
       <section className="section">

@@ -5,13 +5,15 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "HandBook",
+      "url": "https://www.notion.so/414fbbfd0e284746b9ce201d6c9022bf?v=8f13602cf0404371a9abb14b756dcc19"
     },
+
     {
-      "name": "Join as Investor",
-      "url": "/join-investor"
+      "name": "Join as Mentor",
+      "url": "https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mentor_on-boarding_form"
     }
+
   ],
   "footer": [
     {
