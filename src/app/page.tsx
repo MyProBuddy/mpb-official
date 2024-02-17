@@ -10,7 +10,7 @@ import { FaCheck } from "react-icons/fa/index.js";
 import LogoGrid from "@/partials/logoGrid";
 import Counter from "@/partials/counter";
 import CounterInfo from "@/partials/CounterInfo";
-import RaiseCapital from "@/partials/RaiseCapital";
+// import RaiseCapital from "@/partials/RaiseCapital";
 import InteractiveCourses from "@/partials/InteractiveCourses";
 import FeaturedIn from "@/partials/featuredin";
 
@@ -19,7 +19,7 @@ const Home = () => {
   const testimonial = getListPage("sections/testimonial.md");
   const callToAction = getListPage("sections/call-to-action.md");
   const interactiveCourses = getListPage("sections/interactive-courses.md");
-  const raiseCapital = getListPage("sections/raise-capital.md");
+  // const raiseCapital = getListPage("sections/raise-capital.md");
   const counterinfo = getListPage("sections/counterinfo.md");
   const { frontmatter } = homepage;
   const {
@@ -33,8 +33,16 @@ const Home = () => {
   return (
     <>
       <SeoMeta />
-      <section className="section" style={{paddingTop: "0px", paddingBottom: "6rem"}}>
-        <div className="h-24" style={{background: "linear-gradient(to bottom, #ffffff22, transparent)"}}></div>
+      <section
+        className="section"
+        style={{ paddingTop: "0px", paddingBottom: "6rem" }}
+      >
+        <div
+          className="h-24"
+          style={{
+            background: "linear-gradient(to bottom, #ffffff22, transparent)",
+          }}
+        ></div>
         <div className="container">
           <div className="row justify-center">
             <div className="mb-6 text-center lg:col-8">
@@ -85,12 +93,12 @@ const Home = () => {
         </div>
       </section>
       <CallToAction data={callToAction} />
-       <CounterInfo data={counterinfo} />
+      <CounterInfo data={counterinfo} />
       {features.map((feature, index: number) => (
         <section
           key={index}
           className={`section-sm ${index % 2 === 0 && "bg-gradient-to-b to-transparent from-[#34222E]"}`}
-          style={{ padding: "3rem 0",  marginTop: "3rem" }}
+          style={{ padding: "3rem 0", marginTop: "3rem" }}
         >
           <div className="container ">
             {index % 2 !== 0 ? (
@@ -172,14 +180,12 @@ const Home = () => {
       <Counter />
 
       {/* <GetMoreCustomers data={getMoreCustomers} /> */}
-      <RaiseCapital data={raiseCapital} />
+      {/* <RaiseCapital data={raiseCapital} /> */}
       <InteractiveCourses data={interactiveCourses} />
 
-
-      <FeaturedIn/>
+      <FeaturedIn />
 
       <Testimonials data={testimonial} />
-
     </>
   );
 };

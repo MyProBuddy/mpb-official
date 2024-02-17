@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Student Startup Accelerator"
-  content: "Launch Your Business with Confidence: Your All-in-One Startup Accelerator"
+  # content: "Launch Your Business with Confidence: Your All-in-One Startup Accelerator"
   image: "/bg/how-it-works-w-labels.png"
   button:
     enable: true

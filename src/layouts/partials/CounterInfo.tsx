@@ -31,7 +31,7 @@ const CounterInfo = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section className="mb-28">
           <div className="container">
-            <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-transparent to-[#044045]">
+            <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-transparent to-[#5A2988]">
               <div
                 className={`row flex-row-reverse items-center justify-between`}
               >
@@ -71,7 +71,10 @@ const CounterInfo = ({ data }: { data: PageData }) => {
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {tags.map((tag, index) => (
-                      <div key={index} className="py-1 px-3 text-sm rounded-full bg-opacity-10 bg-white text-white font-semibold text-opacity-60">
+                      <div
+                        key={index}
+                        className="py-1 px-3 text-sm rounded-full bg-opacity-10 bg-white text-white font-semibold text-opacity-60"
+                      >
                         {tag}
                       </div>
                     ))}

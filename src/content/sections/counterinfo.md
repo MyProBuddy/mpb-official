@@ -1,7 +1,7 @@
 ---
 enable: true
 title: "Get More Customers"
-image: "bg/live-chat.png"
+image: "assets/amrish.jpeg"
 description: "Whether you're trying to find your first customer or scale to millions, we can help you supercharge your acquisition efforts."
 button:
   enable: false

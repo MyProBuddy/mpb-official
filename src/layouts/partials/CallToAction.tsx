@@ -2,8 +2,7 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Get_your_customers } from "@/types";
 import Link from "next/link";
-import image1 from "../../../public/bg/live-chat.png";
-
+import image1 from "../../../public/assets/amrish.jpeg";
 
 interface PageData {
   notFound?: boolean;
@@ -18,24 +17,24 @@ const CallToAction = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section className="">
           <div className="container">
-             <h2
+            <h2
               className={`mb-12`}
               style={{
                 fontSize: "48px",
                 lineHeight: "57.6px",
                 textAlign: "center",
                 color: "white",
-
               }}
-            >Get Expert Help</h2>
-            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#044045] to-transparent">
+            >
+              Get Expert Help
+            </h2>
+            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#5A2988] to-transparent">
               <div className={`row items-center justify-between`}>
                 <div className="mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
                   <ImageFallback
                     className="w-full"
                     src={image1}
-                    width={392}
-                    height={390}
+                    height={100}
                     alt="cta-image"
                   />
                 </div>
@@ -68,7 +67,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
                       className="btn btn-primary"
                       href="https://calendly.com/myprobuddy"
                     >
-                     Get Connected
+                      Meet Your Advisor
                     </Link>
                   )}
                 </div>

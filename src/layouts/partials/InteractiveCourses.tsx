@@ -8,7 +8,6 @@ import "swiper/css";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 interface PageData {
   notFound?: boolean;
   content?: string;
@@ -33,7 +32,6 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                       fontSize: "48px",
                       lineHeight: "57.6px",
                       textAlign: "left",
-
                     }}
                   />
                   <p
@@ -53,7 +51,7 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                       className="btn btn-primary"
                       href="https://www.notion.so/414fbbfd0e284746b9ce201d6c9022bf?v=8f13602cf0404371a9abb14b756dcc19"
                     >
-                     Know More
+                      Explore Courses
                     </Link>
                   )}
                 </div>
@@ -68,8 +66,8 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                 </div>
               </div>
               <div className="flex items-center mb-2">
-                <span className="text-white font-bold">Browse Courses</span>
-                <hr className="flex-1 ml-4 opacity-30 border-[1px]"/>
+                <span className="text-white font-bold">Curated Courses</span>
+                <hr className="flex-1 ml-4 opacity-30 border-[1px]" />
               </div>
               <Swiper
                 modules={[Autoplay, Pagination]}
@@ -90,20 +88,18 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                   },
                 }}
               >
-                  {data.frontmatter.slides.map(
-                    (item: Slide, index: number) => (
-                      <SwiperSlide key={index}>
-                        <ImageFallback
-                          height={200}
-                          width={200}
-                          className="w-full h-auto rounded-2xl"
-                          src={item.image}
-                          alt={item.name}
-                        />
-                      </SwiperSlide>
-                    ))}
+                {data.frontmatter.slides.map((item: Slide, index: number) => (
+                  <SwiperSlide key={index}>
+                    <ImageFallback
+                      height={200}
+                      width={200}
+                      className="w-full h-auto rounded-2xl"
+                      src={item.image}
+                      alt={item.name}
+                    />
+                  </SwiperSlide>
+                ))}
               </Swiper>
-
             </div>
           </div>
         </section>

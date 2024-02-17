@@ -9,7 +9,6 @@ button:
   label: "Become a Fundraising pro →"
   link: "https://github.com/zeon-studio/nextplate"
 
-
 slides:
   - name: "Idea Validation"
     image: "/bg/courses/ideavalidation.png"
@@ -20,6 +19,6 @@ slides:
   - name: "Customer Acquisition"
     image: "/bg/courses/customeracquisition.png"
 
-  - name: "Startup Finance"
-    image: "/bg/courses/startupfinance.png"
+  # - name: "Startup Finance"
+  #   image: "/bg/courses/startupfinance.png"
 ---
