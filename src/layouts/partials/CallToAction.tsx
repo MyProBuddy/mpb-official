@@ -2,7 +2,7 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Get_your_customers } from "@/types";
 import Link from "next/link";
-import image1 from "../../../public/assets/amrish.jpeg";
+import image1 from "../../../public/assets/amrish.png";
 
 interface PageData {
   notFound?: boolean;
@@ -28,9 +28,9 @@ const CallToAction = ({ data }: { data: PageData }) => {
             >
               Get Expert Help
             </h2>
-            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#5A2988] to-transparent">
+            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#04393e] to-transparent">
               <div className={`row items-center justify-between`}>
-                <div className="mb-10 md:col-7 lg:col-7 md:order-2 md:mb-0">
+                <div className="mb-10 md:col-7 lg:col-5 md:order-2 md:mb-0">
                   <ImageFallback
                     className="w-full"
                     src={image1}

@@ -31,7 +31,7 @@ const CounterInfo = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section className="mb-28">
           <div className="container">
-            <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-transparent to-[#5A2988]">
+            <div className="rounded-xl px-4 py-16 xl:p-20 bg-gradient-to-b from-transparent to-[#04393e]">
               <div
                 className={`row flex-row-reverse items-center justify-between`}
               >
