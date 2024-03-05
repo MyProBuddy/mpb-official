@@ -2,7 +2,7 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Get_your_customers } from "@/types";
 import Link from "next/link";
-import image1 from "../../../public/assets/amrish.png";
+import image1 from "../../../public/assets/phone.png";
 
 interface PageData {
   notFound?: boolean;
@@ -11,14 +11,14 @@ interface PageData {
   reverse?: boolean;
 }
 
-const CallToAction = ({ data }: { data: PageData }) => {
+const Phone = ({ data }: { data: PageData }) => {
   return (
     <>
       {data.frontmatter.enable && (
-        <section className="mt-10">
-          <div className="container">
-            {/* <h2
-              className={`mb-12`}
+        <section className="">
+          <div className="container mt-14">
+            <h2
+              className={`mb-6`}
               style={{
                 fontSize: "48px",
                 lineHeight: "57.6px",
@@ -26,11 +26,11 @@ const CallToAction = ({ data }: { data: PageData }) => {
                 color: "white",
               }}
             >
-              Get Expert Help
-            </h2> */}
-            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#612A84] to-transparent">
+              Chat with Experts!
+            </h2>
+            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#04393e] to-transparent">
               <div className={`row items-center justify-between`}>
-                <div className="mb-10 md:col-7 lg:col-5 md:order-2 md:mb-0">
+                <div className="mb-10 md:col-7 lg:col-6 md:order-2 md:mb-0">
                   <ImageFallback
                     className="w-full"
                     src={image1}
@@ -80,4 +80,4 @@ const CallToAction = ({ data }: { data: PageData }) => {
   );
 };
 
-export default CallToAction;
+export default Phone;

@@ -2,22 +2,28 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction";
+import { IoSearch } from "react-icons/io5/index.js";
 import SeoMeta from "@/partials/SeoMeta";
 import Testimonials from "@/partials/Testimonials";
+import Phone from "@/partials/phone";
 import { Button, Feature } from "@/types";
+import AnotherFeaturedin from "@/partials/AnotherFeaturedin";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa/index.js";
 import LogoGrid from "@/partials/logoGrid";
 import Counter from "@/partials/counter";
+import CounterMid from "@/partials/CounterMid";
 import CounterInfo from "@/partials/CounterInfo";
 // import RaiseCapital from "@/partials/RaiseCapital";
 import InteractiveCourses from "@/partials/InteractiveCourses";
 import FeaturedIn from "@/partials/featuredin";
 
+
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
   const testimonial = getListPage("sections/testimonial.md");
   const callToAction = getListPage("sections/call-to-action.md");
+  const phone = getListPage("sections/phone.md");
   const interactiveCourses = getListPage("sections/interactive-courses.md");
   // const raiseCapital = getListPage("sections/raise-capital.md");
   const counterinfo = getListPage("sections/counterinfo.md");
@@ -45,9 +51,9 @@ const Home = () => {
         ></div>
         <div className="container">
           <div className="row justify-center">
-            <div className="mb-6 text-center lg:col-8">
+            <div className="mb-4 text-center lg:col-8">
               <h1
-                className="head1 mb-4 text-6xl font-bold"
+                className="head1 mb-0 text-6xl font-bold"
                 style={{
                   background: "linear-gradient(to right, #f57114, #5e2591)",
                   WebkitBackgroundClip: "text",
@@ -73,6 +79,25 @@ const Home = () => {
               </div>
             )}
           </div>
+           <div className="order-1 w-full justify-center align-center ml-auto flex items-center md:order-2 lg:ml-0">
+
+          {/* <ThemeSwitcher className="mr-5" /> */}
+
+            <Link
+              className="btn btn-primary w-64 text-center"
+              href="https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mpb_startup_assistance_form"
+              style={{
+                background: "linear-gradient(to right, #f57114, #5e2591)",
+                outline: "none",
+                border: "none",
+                color: "white",
+                padding: "0.47rem 2rem",
+              }}
+            >
+              Get Started
+            </Link>
+
+        </div>
           {/* <div className="flex justify-center items-center w-full mt-3">
             {banner.button!.enable && (
               <Link
@@ -93,6 +118,8 @@ const Home = () => {
         </div>
       </section>
       <CallToAction data={callToAction} />
+      <Phone data={phone} />
+      <CounterMid />
       <CounterInfo data={counterinfo} />
       {features.map((feature, index: number) => (
         <section
@@ -184,6 +211,7 @@ const Home = () => {
       <InteractiveCourses data={interactiveCourses} />
 
       <FeaturedIn />
+      <AnotherFeaturedin />
 
       <Testimonials data={testimonial} />
     </>

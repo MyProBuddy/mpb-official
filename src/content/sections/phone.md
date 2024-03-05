@@ -1,7 +1,7 @@
 ---
 enable: true
-title: "Dedicated Startup Advisor"
-image: "assets/amrish.jpeg"
+title: "Build your startup with a Dedicated Advisor"
+image: "assets/phone.png"
 description: "Team up with a dedicated, experienced Startup Advisor Who knows exactly where to find the help you need to scale."
 button:
   enable: true

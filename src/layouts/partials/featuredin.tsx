@@ -16,7 +16,7 @@ export default function FeaturedIn(){
     "/logos/Frame12.png",
   ]
   return (
-    <section className="section">
+    <section className="mt-24 mb-16">
     <div className="container">
       <div className="w-full flex justify-center mb-6">
     <h2
