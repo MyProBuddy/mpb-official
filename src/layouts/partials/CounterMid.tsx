@@ -33,7 +33,7 @@ export default function CounterMid() {
               </p>
             </div>
           </div>
-           <div className="w-full lg:w-1/3 px-4 mb-2 lg:mb-0">
+          <div className="w-full lg:w-1/3 px-4 mb-2 lg:mb-0">
             <div className="text-center items-center flex flex-col">
               {/* <img src="image1.jpg" alt="Experience" className="mb-4" /> */}
               {/* <Image alt={"target"} src={icon1} height={200} width={200} /> */}

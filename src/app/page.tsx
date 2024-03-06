@@ -18,7 +18,6 @@ import CounterInfo from "@/partials/CounterInfo";
 import InteractiveCourses from "@/partials/InteractiveCourses";
 import FeaturedIn from "@/partials/featuredin";
 
-
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
   const testimonial = getListPage("sections/testimonial.md");
@@ -79,9 +78,8 @@ const Home = () => {
               </div>
             )}
           </div>
-           <div className="order-1 w-full justify-center align-center ml-auto flex items-center md:order-2 lg:ml-0">
-
-          {/* <ThemeSwitcher className="mr-5" /> */}
+          <div className="order-1 w-full justify-center align-center ml-auto flex items-center md:order-2 lg:ml-0">
+            {/* <ThemeSwitcher className="mr-5" /> */}
 
             <Link
               className="btn btn-primary w-64 text-center"
@@ -96,8 +94,7 @@ const Home = () => {
             >
               Get Started
             </Link>
-
-        </div>
+          </div>
           {/* <div className="flex justify-center items-center w-full mt-3">
             {banner.button!.enable && (
               <Link
@@ -121,11 +118,21 @@ const Home = () => {
       <Phone data={phone} />
       <CounterMid />
       <CounterInfo data={counterinfo} />
+      <h2
+        className=""
+        style={{
+          fontSize: "36px",
+          lineHeight: "57.6px",
+          textAlign: "center",
+        }}
+      >
+        Get Customized Action Plan
+      </h2>
       {features.map((feature, index: number) => (
         <section
           key={index}
           className={`section-sm ${index % 2 === 0 && "bg-gradient-to-b to-transparent from-[#34222E]"}`}
-          style={{ padding: "3rem 0", marginTop: "3rem" }}
+          style={{ padding: "3rem 0", marginTop: "1rem" }}
         >
           <div className="container ">
             {index % 2 !== 0 ? (
@@ -142,6 +149,7 @@ const Home = () => {
             ) : (
               <div className="mt-12"></div>
             )}
+
             <div className="row items-center justify-between">
               <div
                 className={`mb:md-0 mb-4 md:col-7 ${
