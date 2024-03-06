@@ -8,7 +8,7 @@ export default function AnotherFeaturedin(){
   ]
 
   return (
-    <section className="mt-20 mb-16">
+    <section className="mt-20 mb-0">
     <div className="container">
       <div className="w-full flex justify-center mb-6">
     <h2
