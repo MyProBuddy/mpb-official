@@ -17,8 +17,14 @@ import CounterInfo from "@/partials/CounterInfo";
 // import RaiseCapital from "@/partials/RaiseCapital";
 import InteractiveCourses from "@/partials/InteractiveCourses";
 import FeaturedIn from "@/partials/featuredin";
+import { Author } from "@/types";
+import { getSinglePage } from "@/lib/contentParser";
+import AuthorCard from "@/components/AuthorCard";
 
 const Home = () => {
+    const authorIndex: Author = getListPage("authors/_index.md");
+  const authors: Author[] = getSinglePage("authors");
+  const { title, meta_title, description, image } = authorIndex.frontmatter;
   const homepage = getListPage("homepage/_index.md");
   const testimonial = getListPage("sections/testimonial.md");
   const callToAction = getListPage("sections/call-to-action.md");
@@ -115,6 +121,7 @@ const Home = () => {
         </div>
       </section>
       <CallToAction data={callToAction} />
+
       <Phone data={phone} />
       <CounterMid />
       <CounterInfo data={counterinfo} />

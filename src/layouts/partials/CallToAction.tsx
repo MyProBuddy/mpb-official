@@ -3,6 +3,11 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { Get_your_customers } from "@/types";
 import Link from "next/link";
 import image1 from "../../../public/assets/amrish.png";
+import { Author } from "@/types";
+import { getSinglePage } from "@/lib/contentParser";
+import AuthorCard from "@/components/AuthorCard";
+import { getListPage } from "@/lib/contentParser";
+
 
 interface PageData {
   notFound?: boolean;
@@ -12,6 +17,8 @@ interface PageData {
 }
 
 const CallToAction = ({ data }: { data: PageData }) => {
+   const authorIndex: Author = getListPage("authors/_index.md");
+  const authors: Author[] = getSinglePage("authors");
   return (
     <>
       {data.frontmatter.enable && (
@@ -28,7 +35,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
             >
               Get Expert Help
             </h2> */}
-            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#612A84] to-transparent">
+            <div className="rounded-xl pt-16 xl:px-20 pt-20 bg-gradient-to-b from-[#612A84] to-transparent">
               <div className={`row items-center justify-between`}>
                 <div className="mb-10 md:col-7 lg:col-5 md:order-2 md:mb-0">
                   <ImageFallback
@@ -72,8 +79,20 @@ const CallToAction = ({ data }: { data: PageData }) => {
                   )}
                 </div>
               </div>
+               <section className="section-sm pb-0">
+        <div className="container">
+          <div className="row justify-center">
+            {authors.map((author: Author, index: number) => (
+              <div className="mb-14 md:col-6 lg:col-4" key={index}>
+                <AuthorCard data={author} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
             </div>
           </div>
+
         </section>
       )}
     </>
