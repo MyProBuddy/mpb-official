@@ -22,7 +22,7 @@ import { getSinglePage } from "@/lib/contentParser";
 import AuthorCard from "@/components/AuthorCard";
 
 const Home = () => {
-    const authorIndex: Author = getListPage("authors/_index.md");
+  const authorIndex: Author = getListPage("authors/_index.md");
   const authors: Author[] = getSinglePage("authors");
   const { title, meta_title, description, image } = authorIndex.frontmatter;
   const homepage = getListPage("homepage/_index.md");
@@ -125,7 +125,7 @@ const Home = () => {
       <Phone data={phone} />
       <CounterMid />
       <CounterInfo data={counterinfo} />
-      <h2
+      {/* <h2
         className=""
         style={{
           fontSize: "36px",
@@ -134,12 +134,12 @@ const Home = () => {
         }}
       >
         Get Customized Action Plan
-      </h2>
+      </h2> */}
       {features.map((feature, index: number) => (
         <section
           key={index}
           className={`section-sm ${index % 2 === 0 && "bg-gradient-to-b to-transparent from-[#34222E]"}`}
-          style={{ padding: "3rem 0", marginTop: "1rem" }}
+          style={{ padding: "3rem 0", marginTop: "3rem" }}
         >
           <div className="container ">
             {index % 2 !== 0 ? (
