@@ -1,6 +1,6 @@
-import Image from "next/image"
+import Image from "next/image";
 
-export default function FeaturedIn(){
+export default function FeaturedIn() {
   const images = [
     "/logos/Frame1.png",
     "/logos/Frame2.png",
@@ -14,7 +14,7 @@ export default function FeaturedIn(){
     "/logos/Frame10.png",
     "/logos/Frame11.png",
     "/logos/Frame12.png",
-  ]
+  ];
   return (
     <section className="mt-24 mb-16">
     <div className="container">
@@ -42,10 +42,9 @@ export default function FeaturedIn(){
               height={100}
             />
             </div>
-          ))
-        }
+          ))}
+        </div>
       </div>
-      </div>
-      </section>
-  )
+    </section>
+  );
 }

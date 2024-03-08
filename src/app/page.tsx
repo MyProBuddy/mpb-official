@@ -48,12 +48,7 @@ const Home = () => {
         className="section"
         style={{ paddingTop: "0px", paddingBottom: "6rem" }}
       >
-        <div
-          className="h-24"
-          style={{
-            background: "linear-gradient(to bottom, #ffffff22, transparent)",
-          }}
-        ></div>
+        <div className="h-24 hidden sm:block bg-gradient-to-b from-[#ffffff22] to-transparent"></div>
         <div className="container">
           <div className="row justify-center">
             <div className="mb-4 text-center lg:col-8">
@@ -125,7 +120,7 @@ const Home = () => {
       <Phone data={phone} />
       <CounterMid />
       <CounterInfo data={counterinfo} />
-      {/* <h2
+      <h2
         className=""
         style={{
           fontSize: "36px",
@@ -134,12 +129,12 @@ const Home = () => {
         }}
       >
         Get Customized Action Plan
-      </h2> */}
+      </h2>
       {features.map((feature, index: number) => (
         <section
           key={index}
           className={`section-sm ${index % 2 === 0 && "bg-gradient-to-b to-transparent from-[#34222E]"}`}
-          style={{ padding: "3rem 0", marginTop: "3rem" }}
+          style={{ padding: "3rem 0", marginTop: "1rem" }}
         >
           <div className="container ">
             {index % 2 !== 0 ? (

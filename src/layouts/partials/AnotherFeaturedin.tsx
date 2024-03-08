@@ -1,11 +1,11 @@
-import Image from "next/image"
+import Image from "next/image";
 
-export default function AnotherFeaturedin(){
+export default function AnotherFeaturedin() {
   const images = [
     "/assets/innsurge.png",
     "/assets/forbes.png",
-    "/assets/passionvista.png"
-  ]
+    "/assets/passionvista.png",
+  ];
 
   return (
     <section className="mt-20 mb-0">
@@ -34,10 +34,9 @@ export default function AnotherFeaturedin(){
               height={100}
             />
             </div>
-          ))
-        }
+          ))}
+        </div>
       </div>
-      </div>
-      </section>
-  )
+    </section>
+  );
 }

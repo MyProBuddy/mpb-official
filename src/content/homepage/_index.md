@@ -11,7 +11,7 @@ banner:
 
 # Features
 features:
-  - title: "Customized Action Plan"
+  - title: ""
     heading: "Plan for Scale"
     image: "/bg/callout-custom-funding-plan.png"
     content: "You tell us what you want to achieve, we'll build a kick-ass plan to get it done fast. We'll customize your plan to take advantage of the playbooks of thousands of startups before you."
