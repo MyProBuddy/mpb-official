@@ -27,7 +27,7 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                     dangerouslySetInnerHTML={markdownify(
                       data.frontmatter.title,
                     )}
-                    className="mb-2"
+                    className="mb-2 md:text-1xl sm:text-1xl"
                     style={{
                       fontSize: "48px",
                       lineHeight: "57.6px",

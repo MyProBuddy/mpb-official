@@ -20,34 +20,32 @@ interface PageData {
 }
 
 const Attestant = ({ data }: { data: Testimonial }) => {
-
-  if (data.link) return (
-    <div className="mt-11 flex items-center">
-      <Link href={data.link} className="text-dark dark:text-white">
-        <ImageFallback
-          height={50}
-          width={50}
-          className="rounded-full"
-          src={data.avatar}
-          alt={data.name}
-        />
-      </Link>
-      <div className="ml-4">
-        <Link href={data.link}>
-          <h3
-            dangerouslySetInnerHTML={markdownify(data.name)}
-            className="h5 font-primary font-semibold"
+  if (data.link)
+    return (
+      <div className="mt-11 flex items-center">
+        <Link href={data.link} className="text-dark dark:text-white">
+          <ImageFallback
+            height={50}
+            width={50}
+            className="rounded-full"
+            src={data.avatar}
+            alt={data.name}
           />
         </Link>
-        <p
-          dangerouslySetInnerHTML={markdownify(
-            data.designation,
-          )}
-          className="text-dark dark:text-white"
-        />
+        <div className="ml-4">
+          <Link href={data.link}>
+            <h3
+              dangerouslySetInnerHTML={markdownify(data.name)}
+              className="h5 font-primary font-semibold"
+            />
+          </Link>
+          <p
+            dangerouslySetInnerHTML={markdownify(data.designation)}
+            className="text-dark dark:text-white"
+          />
+        </div>
       </div>
-    </div>
-  )
+    );
 
   return (
     <div className="mt-11 flex items-center">
@@ -58,7 +56,7 @@ const Attestant = ({ data }: { data: Testimonial }) => {
           className="rounded-full"
           src={data.avatar}
           alt={data.name}
-          />
+        />
       </div>
       <div className="ml-4">
         <h3
@@ -66,15 +64,13 @@ const Attestant = ({ data }: { data: Testimonial }) => {
           className="h5 font-primary font-semibold"
         />
         <p
-          dangerouslySetInnerHTML={markdownify(
-            data.designation,
-          )}
+          dangerouslySetInnerHTML={markdownify(data.designation)}
           className="text-dark dark:text-white"
-          />
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
 const Testimonials = ({ data }: { data: PageData }) => {
   return (
@@ -85,14 +81,19 @@ const Testimonials = ({ data }: { data: PageData }) => {
             <div className="row">
               <div className="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
                 <h2
-                  className="mb-4"
-                  style={{ background: "linear-gradient(to right, #f57114, #5e2591)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+                  className="mb-4 sm:text-1xl md:text-1xl"
+                  style={{
+                    background: "linear-gradient(to right, #f57114, #5e2591)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
                     fontSize: "48px",
                     lineHeight: "57.6px",
                     letterSpacing: "-1.92px",
                     textAlign: "center",
                   }}
-                >What People Say </h2>
+                >
+                  What People Say{" "}
+                </h2>
                 <p
                   dangerouslySetInnerHTML={markdownify(
                     data.frontmatter.description!,
@@ -143,7 +144,6 @@ const Testimonials = ({ data }: { data: PageData }) => {
                           />
 
                           <Attestant data={item} />
-
                         </div>
                       </SwiperSlide>
                     ),

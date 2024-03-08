@@ -22,7 +22,7 @@ import { getSinglePage } from "@/lib/contentParser";
 import AuthorCard from "@/components/AuthorCard";
 
 const Home = () => {
-    const authorIndex: Author = getListPage("authors/_index.md");
+  const authorIndex: Author = getListPage("authors/_index.md");
   const authors: Author[] = getSinglePage("authors");
   const { title, meta_title, description, image } = authorIndex.frontmatter;
   const homepage = getListPage("homepage/_index.md");
@@ -48,17 +48,12 @@ const Home = () => {
         className="section"
         style={{ paddingTop: "0px", paddingBottom: "6rem" }}
       >
-        <div
-          className="h-24"
-          style={{
-            background: "linear-gradient(to bottom, #ffffff22, transparent)",
-          }}
-        ></div>
+        <div className="h-24 hidden sm:block bg-gradient-to-b from-[#ffffff22] to-transparent"></div>
         <div className="container">
           <div className="row justify-center">
             <div className="mb-4 text-center lg:col-8">
               <h1
-                className="head1 mb-0 text-6xl font-bold"
+                className="head1 mb-0 text-6xl font-bold p-1"
                 style={{
                   background: "linear-gradient(to right, #f57114, #5e2591)",
                   WebkitBackgroundClip: "text",
