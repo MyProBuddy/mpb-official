@@ -1,5 +1,5 @@
 ---
-title: Abhinav
+title: Jasper
 email: williamjacob@email.com
 image: "/assets/abhinav.png"
 description: this is meta description
@@ -17,4 +17,4 @@ social:
     link: https://linkedin.com
 ---
 
-lorem ipsum dolor sit amet
+Founder of Fellow Founder

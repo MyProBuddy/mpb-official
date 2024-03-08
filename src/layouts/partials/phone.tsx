@@ -18,9 +18,9 @@ const Phone = ({ data }: { data: PageData }) => {
         <section className="">
           <div className="container mt-14">
             <h2
-              className={`mb-6`}
+              className={`mb-6 text-4xl sm:text-5xl`}
               style={{
-                fontSize: "48px",
+                // fontSize: "48px",
                 lineHeight: "57.6px",
                 textAlign: "center",
                 color: "white",
@@ -28,7 +28,7 @@ const Phone = ({ data }: { data: PageData }) => {
             >
               Chat with Experts!
             </h2>
-            <div className="rounded-xl py-16 xl:p-20 bg-gradient-to-b from-[#04393e] to-transparent">
+            <div className="rounded-xl px-3 py-16 xl:p-20 bg-gradient-to-b from-[#04393e] to-transparent">
               <div className={`row items-center justify-between`}>
                 <div className="mb-10 md:col-7 lg:col-6 md:order-2 md:mb-0">
                   <ImageFallback
@@ -43,10 +43,10 @@ const Phone = ({ data }: { data: PageData }) => {
                     dangerouslySetInnerHTML={markdownify(
                       data.frontmatter.title,
                     )}
-                    className="mb-2"
+                    className="mb-2 text-3xl sm:text-4xl"
                     style={{
-                      fontSize: "40px",
-                      lineHeight: "57.6px",
+                      // fontSize: "40px",
+                      lineHeight: "50px",
                       textAlign: "left",
                     }}
                   />

@@ -17,4 +17,4 @@ social:
     link: https://linkedin.com
 ---
 
-Founder & CEO of Hion Studios
+CEO of Hion Studios

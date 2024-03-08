@@ -12,7 +12,7 @@ export default function AnotherFeaturedin(){
     <div className="container">
       <div className="w-full flex justify-center mb-6">
     <h2
-      className="mb-2"
+      className="mb-2 "
       style={{
         fontSize: "36px",
         lineHeight: "47px",
@@ -22,7 +22,7 @@ export default function AnotherFeaturedin(){
       Featured In
     </h2>
       </div>
-      <div className="flex justify-center align-center sm:grid-cols-3 grid-cols-2 gap-x-14 gap-y-6">
+      <div className="flex justify-center align-center sm:grid-cols-3 grid-cols-2 sm:gap-x-12 gap-x-2 gap-y-6">
         {
           images.map((image, index)=> (
             <div key={index} className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">

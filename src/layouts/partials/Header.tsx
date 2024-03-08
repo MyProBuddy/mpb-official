@@ -41,7 +41,7 @@ const Header = () => {
     >
       <nav className="navbar container">
         {/* logo */}
-        <div className="order-0">
+        <div className="order-0 -ml-2">
           <Logo />
         </div>
         {/* navbar toggler */}
@@ -139,7 +139,7 @@ const Header = () => {
           )}
         </ul>
         <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-          {settings.search && (
+          {/* {settings.search && (
             <button
               className="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
               aria-label="search"
@@ -147,11 +147,11 @@ const Header = () => {
             >
               <IoSearch />
             </button>
-          )}
+          )} */}
           {/* <ThemeSwitcher className="mr-5" /> */}
           {navigation_button.enable && (
             <Link
-              className="btn btn-primary"
+              className="btn btn-primary md:block hidden"
               href="https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mpb_startup_assistance_form"
               style={{
                 background: "linear-gradient(to right, #f57114, #5e2591)",

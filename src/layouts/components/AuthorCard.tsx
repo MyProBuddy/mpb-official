@@ -6,10 +6,10 @@ import Link from "next/link";
 const AuthorCard = ({ data }: { data: any }) => {
   const { title, image, social } = data.frontmatter;
   return (
-    <div className="rounded flex bg-theme-light p-4 text-center dark:bg-[#6A567A]">
+    <div className="rounded flex bg-theme-light p-4 text-left dark:bg-[#6A567A]">
       {image && (
         <ImageFallback
-          className="mx-6 mb-0 rounded"
+          className="mr-4 mb-0 rounded"
           src={image}
           alt={title}
           width={60}
@@ -17,7 +17,7 @@ const AuthorCard = ({ data }: { data: any }) => {
         />
       )}
       <div>
-      <h4 className="mb-1 text-lg">
+      <h4 className="mb-1 text-left text-lg">
         <Link href={`/authors/${data.slug}`}>{title}</Link>
       </h4>
       <p className="mb-0 text-sm">{plainify(data.content?.slice(0, 100))}</p>

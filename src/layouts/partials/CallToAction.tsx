@@ -22,7 +22,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
   return (
     <>
       {data.frontmatter.enable && (
-        <section className="mt-10">
+        <section className="mt-4">
           <div className="container">
             {/* <h2
               className={`mb-12`}
@@ -35,8 +35,8 @@ const CallToAction = ({ data }: { data: PageData }) => {
             >
               Get Expert Help
             </h2> */}
-            <div className="rounded-xl pt-16 xl:px-20 pt-20 bg-gradient-to-b from-[#612A84] to-transparent">
-              <div className={`row items-center justify-between`}>
+            <div className="rounded-xl pt-16 xl:px-20 bg-gradient-to-b from-[#612A84] to-transparent">
+              <div className={`row items-center justify-between px-4`}>
                 <div className="mb-10 md:col-7 lg:col-5 md:order-2 md:mb-0">
                   <ImageFallback
                     className="w-full"
@@ -50,9 +50,9 @@ const CallToAction = ({ data }: { data: PageData }) => {
                     dangerouslySetInnerHTML={markdownify(
                       data.frontmatter.title,
                     )}
-                    className="mb-2"
+                    className="mb-2 text-4xl sm:text-4xl"
                     style={{
-                      fontSize: "40px",
+                      // fontSize: "40px",
                       lineHeight: "57.6px",
                       textAlign: "left",
                     }}
@@ -83,7 +83,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
         <div className="container">
           <div className="row justify-center">
             {authors.map((author: Author, index: number) => (
-              <div className="mb-14 md:col-6 lg:col-4" key={index}>
+              <div className="mb-8 md:col-6 lg:col-4" key={index}>
                 <AuthorCard data={author} />
               </div>
             ))}

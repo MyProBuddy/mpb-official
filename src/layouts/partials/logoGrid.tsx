@@ -138,7 +138,8 @@ export default function LogoGrid(){
                   alt="img"
                 />
               </div>
-              <div className={`${style.gridItem} bg-transparent`}>
+              <div className={`${style.gridItem} bg-transparent`}
+              >
                 <Image
                   src={logo15}
                   width={200}

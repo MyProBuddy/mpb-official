@@ -57,8 +57,8 @@ const Home = () => {
         <div className="container">
           <div className="row justify-center">
             <div className="mb-4 text-center lg:col-8">
-              <h1
-                className="head1 mb-0 text-6xl font-bold"
+              <h4
+                className="head1 mb-4 text-4xl font-bold sm:text-6xl"
                 style={{
                   background: "linear-gradient(to right, #f57114, #5e2591)",
                   WebkitBackgroundClip: "text",
@@ -88,7 +88,7 @@ const Home = () => {
             {/* <ThemeSwitcher className="mr-5" /> */}
 
             <Link
-              className="btn btn-primary w-64 text-center"
+              className="btn btn-primary w-64 text-center sm: mt-4"
               href="https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mpb_startup_assistance_form"
               style={{
                 background: "linear-gradient(to right, #f57114, #5e2591)",
@@ -144,9 +144,9 @@ const Home = () => {
           <div className="container ">
             {index % 2 !== 0 ? (
               <h2
-                className={`mb-12`}
+                className={`mb-8 text-4xl sm:text-5xl sm:mb-12`}
                 style={{
-                  fontSize: "48px",
+                  // fontSize: "48px",
                   lineHeight: "57.6px",
                   textAlign: "center",
                   color: index % 2 === 0 ? "#a17aa7" : "white",
@@ -159,7 +159,7 @@ const Home = () => {
 
             <div className="row items-center justify-between">
               <div
-                className={`mb:md-0 mb-4 md:col-7 ${
+                className={`mb:md-0 mb-6 md:col-7 ${
                   index % 2 !== 0 && "md:order-2"
                 }`}
               >
@@ -177,9 +177,9 @@ const Home = () => {
                 }`}
               >
                 <h2
-                  className="mb-4"
+                  className="mb-0 text-2xl sm:text-4xl"
                   style={{
-                    fontSize: "36px",
+                    // fontSize: "36px",
                     lineHeight: "57.6px",
                     textAlign: "left",
                   }}

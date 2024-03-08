@@ -20,16 +20,16 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section>
           <div className="container">
-            <div className="rounded-xl p-4 xl:p-20 bg-gradient-to-t from-[#2a313d] to-transparent">
+            <div className="rounded-xl p-3 xl:p-20 bg-gradient-to-t from-[#2a313d] to-transparent">
               <div className={`row items-center justify-between`}>
                 <div className="md:col-5 md:order-2">
                   <h2
                     dangerouslySetInnerHTML={markdownify(
                       data.frontmatter.title,
                     )}
-                    className="mb-2"
+                    className="mb-2 text-4xl sm:text-5xl"
                     style={{
-                      fontSize: "48px",
+                      // fontSize: "48px",
                       lineHeight: "57.6px",
                       textAlign: "left",
                     }}
@@ -48,7 +48,7 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                   />
                   {data.frontmatter.button.enable && (
                     <Link
-                      className="btn btn-primary"
+                      className="btn mb-8 btn-primary"
                       href="https://www.notion.so/414fbbfd0e284746b9ce201d6c9022bf?v=8f13602cf0404371a9abb14b756dcc19"
                     >
                       Explore Courses
@@ -66,7 +66,7 @@ const GetMoreCustomers = ({ data }: { data: PageData }) => {
                 </div>
               </div>
               <div className="flex items-center mb-2">
-                <span className="text-white font-bold">Curated Courses</span>
+                <span className="text-white mb-2 font-bold">Curated Courses</span>
                 <hr className="flex-1 ml-4 opacity-30 border-[1px]" />
               </div>
               <Swiper

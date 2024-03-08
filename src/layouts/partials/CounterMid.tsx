@@ -41,7 +41,7 @@ export default function CounterMid() {
                 className="text-4xl font-semibold text-[#4BA39C]"
                 style={{
                   fontSize: "40px",
-                  lineHeight: "96px",
+                  lineHeight: "52px",
                   textAlign: "center",
                 }}
               >
