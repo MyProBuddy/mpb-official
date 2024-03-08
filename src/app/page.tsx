@@ -45,7 +45,7 @@ const Home = () => {
     <>
       <SeoMeta />
       <section
-        className="section"
+        className=""
         style={{ paddingTop: "", paddingBottom: "6rem" }}
       >
         <div className="h-24 sm:block bg-gradient-to-b from-[#ffffff22] to-transparent"></div>
