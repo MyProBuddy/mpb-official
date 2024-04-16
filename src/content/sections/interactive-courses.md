@@ -1,7 +1,7 @@
 ---
 enable: true
 title: "Interactive Courses"
-image: "bg/courses/pitchdeck.png"
+image: "/bg/courses/pitchdeck.png"
 description: "Get thorough, interactive walkthroughs of complicated topics written specifically for startup Founders. Step-by-step instructions on how to validate a New Idea, craft the perfect Pitch Deck and find Investors, and much more."
 reverse: true
 button:

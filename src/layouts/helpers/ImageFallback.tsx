@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const ImageFallback = (props: any) => {
-  const { src, fallback, ...rest } = props;
+  const { src, fallback, width, height, ...rest } = props;
   const [imgSrc, setImgSrc] = useState(src);
 
   useEffect(() => {
@@ -16,8 +16,10 @@ const ImageFallback = (props: any) => {
     <Image
       {...rest}
       src={imgSrc}
+      width={width}
+      height={height}
       placeholder="empty"
-      loader={({ src }) => src}
+      // loader={({ src }) => src}
       onError={() => {
         setImgSrc(fallback);
       }}
