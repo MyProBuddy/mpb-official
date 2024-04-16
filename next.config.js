@@ -10,10 +10,11 @@ const nextConfig = {
     return [
         {
           source: '/grants',
-          destination: 'https://mpb-form-iuhnubeuyce7ec677rc32786278b7z28nseven.vercel.app',
+          destination: 'https://mpb-form-y524.vercel.app/',
         }
     ]
 }
+
 };
 
 module.exports = nextConfig;
