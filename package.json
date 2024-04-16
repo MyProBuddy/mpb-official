@@ -15,7 +15,7 @@
     "generate-json": "node scripts/jsonGenerator.js"
   },
   "engines": {
-    "node": ">=18.18.2"
+    "node": ">=18.18.0"
   },
   "dependencies": {
     "@michaelallenwarner/tailwind-grid-inner": "^1.0.3",
