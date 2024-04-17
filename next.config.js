@@ -10,7 +10,7 @@ const nextConfig = {
     return [
         {
           source: '/grants',
-          destination: 'https://mpb-form-y524.vercel.app/',
+          destination: 'https://mpbforms.vercel.app/',
         }
     ]
 }
