@@ -5,6 +5,9 @@ export default function AnotherFeaturedin() {
     "/assets/innsurge.png",
     "/assets/forbes.png",
     "/assets/passionvista.png",
+    "/assets/internet2.png",
+    "/assets/yourstory.png",
+    "/assets/indiaachiever.png",
   ];
 
   return (
@@ -23,18 +26,73 @@ export default function AnotherFeaturedin() {
     </h2>
       </div>
       <div className="flex justify-center align-center sm:grid-cols-3 grid-cols-2 sm:gap-x-12 gap-x-2 gap-y-6">
-        {
-          images.map((image, index)=> (
-            <div key={index} className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
+            <a
+            href="https://www.magzter.com/IN/CMI-Tech/INNSURGE/Business/685259"
+            target="_blank">
+              <div className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
             <Image
-              alt={`image at ${image}`}
-              src={image}
+              alt={`image`}
+              src="/assets/innsurge.png"
               className="w-full"
               width={100}
               height={100}
             />
-            </div>
-          ))}
+            </div></a>
+            <a
+            href="https://jionews.pie.news/magazine/38/43139?from=Share"
+            target="_blank"> <div className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
+             <Image
+               alt={`image`}
+               src="/assets/forbes.png"
+               className="w-full"
+               width={100}
+               height={100}
+             />
+             </div></a>
+             <a href="https://www.passionvista.com/amrish-krishnan/"
+             target="_blank">   <div className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
+              <Image
+                alt={`image`}
+                src= "/assets/passionvista.png"
+                className="w-full"
+                width={100}
+                height={100}
+              />
+              </div></a>
+              <a
+              href="https://www.youtube.com/watch?v=_Hj6KQw_lI0"
+              target="_blank">    <div className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
+               <Image
+                 alt={`image`}
+                 src= "/assets/internet2.png"
+                 className="w-full"
+                 width={100}
+                 height={100}
+               />
+               </div></a>
+               <a
+               href="https://yourstory.com/companies/myprobuddy"
+               target="_blank">    <div className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
+                <Image
+                  alt={`image`}
+                  src="/assets/yourstory.png"
+                  className="w-full"
+                  width={100}
+                  height={100}
+                />
+                </div></a>
+                <a
+                href="https://www.iafindia.com/mr-amrish-krishnan/"
+                target="_blank">   <div className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
+                  <Image
+                    alt={`image`}
+                    src="/assets/indiaachiever.png"
+                    className="w-full"
+                    width={100}
+                    height={100}
+                  />
+                  </div></a>
+  
         </div>
       </div>
     </section>

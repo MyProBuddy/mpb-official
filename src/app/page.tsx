@@ -82,9 +82,10 @@ const Home = () => {
           <div className="order-1 w-full justify-center align-center ml-auto flex items-center md:order-2 lg:ml-0">
             {/* <ThemeSwitcher className="mr-5" /> */}
 
-            <Link
+            <a
               className="btn btn-primary w-64 text-center sm: mt-4"
               href="https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mpb_startup_assistance_form"
+              target="_blank"
               style={{
                 background: "linear-gradient(to right, #f57114, #5e2591)",
                 outline: "none",
@@ -94,7 +95,7 @@ const Home = () => {
               }}
             >
               Get Started
-            </Link>
+            </a>
           </div>
           {/* <div className="flex justify-center items-center w-full mt-3">
             {banner.button!.enable && (
@@ -201,12 +202,13 @@ const Home = () => {
                   ))}
                 </ul> */}
                 {feature.button.enable && (
-                  <Link
+                  <a
                     className="btn btn-primary mt-5"
                     href={feature.button.link}
+                    target="_blank"
                   >
                     {feature.button.label}
-                  </Link>
+                  </a>
                 )}
               </div>
             </div>

@@ -38,9 +38,9 @@ const CallToAction = ({ data }: { data: PageData }) => {
             <div className="rounded-xl pt-16 xl:px-20 bg-gradient-to-b from-[#612A84] to-transparent">
               <div className={`row items-center justify-between px-4`}>
                 <div className="mb-10 md:col-7 lg:col-5 md:order-2 md:mb-0">
-                  <ImageFallback
+                  <img
                     className="w-full"
-                    src={image1}
+                    src='/assets/amrish.png'
                     height={100}
                     alt="cta-image"
                   />
@@ -70,12 +70,13 @@ const CallToAction = ({ data }: { data: PageData }) => {
                     }}
                   />
                   {data.frontmatter.button.enable && (
-                    <Link
+                    <a
                       className="btn btn-primary"
                       href="https://calendly.com/myprobuddy"
+                      target="_blank"
                     >
                       Meet Your Advisor
-                    </Link>
+                    </a>
                   )}
                 </div>
               </div>

@@ -98,8 +98,9 @@ const Header = () => {
                   <ul className="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
                     {menu.children?.map((child, i) => (
                       <li className="nav-dropdown-item" key={`children-${i}`}>
-                        <Link
+                        <a
                           href={child.url}
+                          target="_blank"
                           className={`nav-dropdown-link block ${
                             (pathname === `${child.url}/` ||
                               pathname === child.url) &&
@@ -107,34 +108,36 @@ const Header = () => {
                           }`}
                         >
                           {child.name}
-                        </Link>
+                        </a>
                       </li>
                     ))}
                   </ul>
                 </li>
               ) : (
                 <li className="nav-item">
-                  <Link
+                  <a
                     href={menu.url}
+                    target="_blank"
                     className={`nav-link block ${
                       (pathname === `${menu.url}/` || pathname === menu.url) &&
                       "active"
                     }`}
                   >
                     {menu.name}
-                  </Link>
+                  </a>
                 </li>
               )}
             </React.Fragment>
           ))}
           {navigation_button.enable && (
             <li className="mt-4 inline-block lg:hidden">
-              <Link
+              <a
                 className="btn btn-outline-primary btn-sm"
+                target="_blank"
                 href={navigation_button.link}
               >
                 {navigation_button.label}
-              </Link>
+              </a>
             </li>
           )}
         </ul>
@@ -150,9 +153,10 @@ const Header = () => {
           )} */}
           {/* <ThemeSwitcher className="mr-5" /> */}
           {navigation_button.enable && (
-            <Link
+            <a
               className="btn btn-primary md:block hidden"
               href="https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mpb_startup_assistance_form"
+              target="_blank"
               style={{
                 background: "linear-gradient(to right, #f57114, #5e2591)",
                 outline: "none",
@@ -162,7 +166,7 @@ const Header = () => {
               }}
             >
               {navigation_button.label}
-            </Link>
+            </a>
           )}
         </div>
       </nav>

@@ -23,7 +23,7 @@ features:
     button:
       enable: true
       label: "Let's Build Your Plan"
-      link: "https://fellows.rookhq.com"
+      link: "https://calendly.com/myprobuddy"
 
   - title: "Curated Peer Groups"
     heading: "Grow Your Network"

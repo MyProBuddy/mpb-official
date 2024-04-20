@@ -79,12 +79,13 @@ const CounterInfo = ({ data }: { data: PageData }) => {
                       </div>
                     ))}
                   </div>
-                  <Link
+                  <a
                     className="btn btn-primary"
                     href={data.frontmatter.button.link}
+                    target="_blank"
                   >
                     Connect With Experts
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
