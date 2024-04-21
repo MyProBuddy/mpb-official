@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
       <div className="border-t border-border py-7 dark:border-darkmode-border">
         <div className="container text-center text-light dark:text-darkmode-light">
-          <p>@ All Rights Reserved - MyProBuddy <br/> Powered by Rook Fellows</p>
+          <p>© 2024 All Rights Reserved - MyProBuddy <br/> Powered by Rook Fellows</p>
         </div>
       </div>
     </footer>

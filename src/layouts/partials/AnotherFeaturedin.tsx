@@ -25,8 +25,8 @@ export default function AnotherFeaturedin() {
       Featured In
     </h2>
       </div>
-      <div className="flex justify-center align-center sm:grid-cols-3 grid-cols-2 sm:gap-x-12 gap-x-2 gap-y-6">
-            <a
+      <div className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-x-6 sm:gap-x-12 gap-y-6">
+    <a
             href="https://www.magzter.com/IN/CMI-Tech/INNSURGE/Business/685259"
             target="_blank">
               <div className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
@@ -59,7 +59,7 @@ export default function AnotherFeaturedin() {
                 height={100}
               />
               </div></a>
-              <a
+        <a
               href="https://www.youtube.com/watch?v=_Hj6KQw_lI0"
               target="_blank">    <div className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
                <Image
@@ -92,7 +92,6 @@ export default function AnotherFeaturedin() {
                     height={100}
                   />
                   </div></a>
-  
         </div>
       </div>
     </section>
