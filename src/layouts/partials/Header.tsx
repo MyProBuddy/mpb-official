@@ -155,7 +155,7 @@ const Header = () => {
           {navigation_button.enable && (
             <a
               className="btn btn-primary md:block hidden"
-              href="https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mpb_startup_assistance_form"
+              href="mailto:reachus@myprobuddy.com"
               target="_blank"
               style={{
                 background: "linear-gradient(to right, #f57114, #5e2591)",

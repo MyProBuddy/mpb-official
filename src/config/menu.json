@@ -10,8 +10,18 @@
     },
 
     {
-      "name": "Join as Mentor",
-      "url": "https://myprobuddy.freshdesk.com/support/tickets/new?ticket_form=mentor_on-boarding_form"
+      "name": "Grants",
+      "url": "https://grants.myprobuddy.com"
+    },
+
+    {
+      "name": "Privacy Poilcy",
+      "url": "https://grants.myprobuddy.com/privacypolicy"
+    },
+
+    {
+      "name": "Terms & Conditions",
+      "url": "https://grants.myprobuddy.com/termsandconditions"
     }
 
   ],

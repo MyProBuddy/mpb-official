@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function FeaturedIn() {
   const images = [
-    "/logos/Frame1.png",
+    "/logos/iima.png",
     "/logos/Frame2.png",
     "/logos/Frame3.png",
     "/logos/Frame4.png",
-    "/logos/Frame5.png",
+    "/logos/tnrtp.png",
     "/logos/Frame6.png",
     "/logos/Frame7.png",
     "/logos/Frame8.png",
     "/logos/Frame9.png",
-    "/logos/Frame10.png",
+    "/logos/wehub.png",
     "/logos/Frame11.png",
     "/logos/Frame12.png",
   ];
