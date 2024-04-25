@@ -12,6 +12,10 @@
     {
       "name": "Grants",
       "url": "https://grants.myprobuddy.com"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
     }
 
   ],
