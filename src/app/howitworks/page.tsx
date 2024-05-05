@@ -21,7 +21,7 @@ const Howitworks: React.FC = () => {
             </li>
             <li>
                 <h3 className={styles.heading}>STAGE 2</h3>
-                <p className={styles.p}>Sign the confidentiality agreement (airtable)
+                <p className={styles.p}>Sign the confidentiality agreement.
 
  </p>
               
@@ -30,7 +30,7 @@ const Howitworks: React.FC = () => {
             </li>
             <li>
                 <h3 className={styles.heading}>STAGE 3</h3>
-                <p className={styles.p}>Fill the questionnaire (airtable)
+                <p className={styles.p}>Fill the questionnaire.
 
                 totam </p>
               
