@@ -30,9 +30,7 @@ const Howitworks: React.FC = () => {
             </li>
             <li>
                 <h3 className={styles.heading}>STAGE 3</h3>
-                <p className={styles.p}>Fill the questionnaire.
-
-                totam </p>
+                <p className={styles.p}>Fill the questionnaire. </p>
               
                 {/* <span className={styles.date}>March 2021</span> */}
                 <span className={styles.circle}></span>
