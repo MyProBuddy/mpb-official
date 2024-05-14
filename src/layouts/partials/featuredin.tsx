@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export default function FeaturedIn() {
   const images = [
-    "/logos/iima.png",
+    
     "/logos/Frame2.png",
     "/logos/Frame3.png",
     "/logos/Frame4.png",
-    "/logos/tnrtp.png",
+    
     "/logos/Frame6.png",
     "/logos/Frame7.png",
     "/logos/Frame8.png",
     "/logos/Frame9.png",
-    "/logos/wehub.png",
+    
     "/logos/Frame11.png",
-    "/logos/Frame12.png",
+   
   ];
   return (
     <section className="mt-24 mb-16">
@@ -30,7 +30,7 @@ export default function FeaturedIn() {
                  Recognised By
                   </h2>
       </div>
-      <div className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-x-6 sm:gap-x-12 gap-y-6">
+      <div className="grid md:grid-cols-4 sm:grid-cols-3  grid-cols-2 gap-x-6 sm:gap-x-10 gap-y-8">
         {
           images.map((image, index)=> (
             <div key={index} className="py-2 bg-white px-3 rounded-xl flex justify-center items-center">
