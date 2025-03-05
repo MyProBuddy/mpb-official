@@ -34,12 +34,12 @@ const Contact = async () => {
                   Email: reachus@myprobuddy.com 
                   </label>
                 </div>
-                <div className="mb-6">
-//                  <label htmlFor="message" className="form-label">
+         {/*          <div className="mb-6">
+             <label htmlFor="message" className="form-label">
                    Address : C5 Jains Ansruta, Valluvar kottam high
-road, Nungambakkam, chennai, Tamil Nadu 600034.
+road, Nungambakkam, chennai, Tamil Nadu 600034.  
                   </label>
-                </div>
+                </div>   */}
               </form>
             </div>
           </div>
