@@ -7,6 +7,7 @@ import { Author } from "@/types";
 import { getSinglePage } from "@/lib/contentParser";
 import AuthorCard from "@/components/AuthorCard";
 import { getListPage } from "@/lib/contentParser";
+import Image from "next/image";
 
 
 interface PageData {
@@ -38,12 +39,13 @@ const CallToAction = ({ data }: { data: PageData }) => {
             <div className="rounded-xl pt-16 xl:px-20 bg-gradient-to-b from-[#612A84] to-transparent">
               <div className={`row items-center justify-between px-4`}>
                 <div className="mb-10 md:col-7 lg:col-5 md:order-2 md:mb-0">
-                <img
-                    className="w-full"
-                    src='/assets/amrish.png'
-                    height={100}
-                    alt="cta-image"
-                  />
+                <Image
+  className="w-full"
+  src={image1}
+  height={100}
+  width={200} // Set an appropriate width
+  alt="cta-image"
+/>
                 </div>
                 <div className="md:col-5 md:order-1">
                   <h2

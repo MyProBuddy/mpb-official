@@ -3,6 +3,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { Get_your_customers } from "@/types";
 import Link from "next/link";
 import image1 from "../../../public/assets/phone.png";
+import Image from "next/image";
 
 interface PageData {
   notFound?: boolean;
@@ -31,12 +32,13 @@ const Phone = ({ data }: { data: PageData }) => {
             <div className="rounded-xl px-3 py-16 xl:p-20 bg-gradient-to-b from-[#04393e] to-transparent">
               <div className={`row items-center justify-between`}>
                 <div className="mb-10 md:col-7 lg:col-6 md:order-2 md:mb-0">
-                <img
-                    className="w-full"
-                    src= "/assets/phone.png"
-                    height={100}
-                    alt="cta-image"
-                  />
+                <Image
+  className="w-full"
+  src={image1}
+  height={100}
+  width={200} // Adjust the width as needed
+  alt="cta-image"
+/>
                 </div>
                 <div className="md:col-5 md:order-1">
                   <h2

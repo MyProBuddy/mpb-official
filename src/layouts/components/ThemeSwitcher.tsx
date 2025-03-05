@@ -10,8 +10,8 @@ const ThemeSwitcher = ({ className }: { className: string }) => {
   const { theme, setTheme, resolvedTheme } = useTheme();
   useEffect(() => {
     setMounted(true);
-    setTheme(theme === "dark" || resolvedTheme === "dark" ? "dark" : "dark");
-  }, []);
+    setTheme(resolvedTheme === "dark" ? "dark" : "light");
+  }, [resolvedTheme, setTheme]);
 
   return (
     <>

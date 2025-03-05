@@ -28,8 +28,17 @@ module.exports = {
     "./src/layouts/**/*.{js,ts,jsx,tsx}",
     "./src/content/**/*.{md,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/swiper/**/*.{js,ts,jsx,tsx}", 
   ],
-  safelist: [{ pattern: /^swiper-/ }],
+  safelist: [
+    "swiper-container",
+    "swiper-slide",
+    "swiper-wrapper",
+    "swiper-pagination",
+    "swiper-pagination-bullet",
+    "swiper-button-prev",
+    "swiper-button-next",
+  ],
   darkMode: "class",
   theme: {
     screens: {
