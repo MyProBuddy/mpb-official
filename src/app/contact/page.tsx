@@ -36,7 +36,7 @@ const Contact = async () => {
                 </div>
          {/*          <div className="mb-6">
              <label htmlFor="message" className="form-label">
-                   Address : C5 Jains Ansruta, Valluvar kottam high
+                   Address: C5 Jains Ansruta, Valluvar kottam high
 road, Nungambakkam, chennai, Tamil Nadu 600034.  
                   </label>
                 </div>   */}
